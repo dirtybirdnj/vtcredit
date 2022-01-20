@@ -438,7 +438,7 @@ function PlasmicFooter__RenderFunc(props) {
             href={"/"}
             platform={"nextjs"}
           >
-            {"Vermont Credit Counseling "}
+            {"VT Consumer Credit Consulting"}
           </p.PlasmicLink>
 
           <p.PlasmicLink
