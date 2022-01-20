@@ -1,0 +1,420 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "seaQhLVS4bbjiGvJJrRwyL",
+      "projectApiToken": "nPw276qGsy9kISQCHrcRrsj3Y9Yva9TMyYKNUpoOMOHgRj1A51qOC6LMB2185QlA52K87n32oQJHSi5be9w",
+      "projectName": "LIBRARY Plasmic Color + Type",
+      "version": "15.0.3",
+      "cssFilePath": "plasmic/library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "codeComponents": []
+    },
+    {
+      "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+      "projectApiToken": "jSQrYvRzsGlrPLaJtoNpRhVaCccE6J5zDV0kRuFXwZsAHw1niKLkIl26BDhghh4RhaWTzV56c17vfTQcOrhw",
+      "projectName": "Vermont Consumer Credit",
+      "version": "latest",
+      "cssFilePath": "plasmic/vermont_consumer_credit/plasmic_vermont_consumer_credit.module.css",
+      "components": [
+        {
+          "id": "OS9jnRN5y9p",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicHome.jsx",
+          "importSpec": {
+            "modulePath": "../pages/index.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "mCxPr8fs96V",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicHeader.jsx",
+          "importSpec": {
+            "modulePath": "Header.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "R265Q5ctgGy",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicFooter.jsx",
+          "importSpec": {
+            "modulePath": "Footer.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "15TtZ6Zo0vI",
+          "name": "FeatureCard",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicFeatureCard.jsx",
+          "importSpec": {
+            "modulePath": "FeatureCard.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicFeatureCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "VxyCfCXPu8O",
+          "name": "HomeCta",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicHomeCta.jsx",
+          "importSpec": {
+            "modulePath": "HomeCta.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicHomeCta.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "EjLZdJRjcnq",
+          "name": "IconLink",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicIconLink.jsx",
+          "importSpec": {
+            "modulePath": "IconLink.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicIconLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "UHonw5mKes0b",
+          "name": "Testimonial",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicTestimonial.jsx",
+          "importSpec": {
+            "modulePath": "Testimonial.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicTestimonial.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "TFmTsDcivu2W",
+          "name": "Avatar",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicAvatar.jsx",
+          "importSpec": {
+            "modulePath": "Avatar.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicAvatar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "6sPp355nJZ-s",
+          "name": "Pricing",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicPricing.jsx",
+          "importSpec": {
+            "modulePath": "../pages/pricing.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicPricing.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "drjN8EGN7rE8",
+          "name": "BaseCard",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicBaseCard.jsx",
+          "importSpec": {
+            "modulePath": "BaseCard.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicBaseCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "oNrTx8m4mKP0",
+          "name": "Plan",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicPlan.jsx",
+          "importSpec": {
+            "modulePath": "Plan.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicPlan.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "r8ItMn1I9Rr2",
+          "name": "Bullet",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicBullet.jsx",
+          "importSpec": {
+            "modulePath": "Bullet.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicBullet.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "uvD0OplvXorD",
+          "name": "Faq",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicFaq.jsx",
+          "importSpec": {
+            "modulePath": "Faq.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicFaq.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "IeUUNtv-gKNa",
+          "name": "Features",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicFeatures.jsx",
+          "importSpec": {
+            "modulePath": "../pages/features.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicFeatures.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "TeEenYh07CLQ",
+          "name": "Section",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicSection.jsx",
+          "importSpec": {
+            "modulePath": "Section.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSection.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "jRx1E81mYCIy",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicButton.jsx",
+          "importSpec": {
+            "modulePath": "Button.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "b5fDbSitrgRQ",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicTextInput.jsx",
+          "importSpec": {
+            "modulePath": "TextInput.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        }
+      ],
+      "icons": [
+        {
+          "id": "VeC2uT8KWQf7",
+          "name": "TwitterIconIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__TwitterIcon.jsx"
+        },
+        {
+          "id": "BmWl-acuNUPO",
+          "name": "GithubIconIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__GithubIcon.jsx"
+        },
+        {
+          "id": "X4N2ic5_a6uK",
+          "name": "FacebookIconIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__FacebookIcon.jsx"
+        },
+        {
+          "id": "e-w90-wSkVN4",
+          "name": "FacebookLogoIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__FacebookLogo.jsx"
+        },
+        {
+          "id": "ajsvomRNRyt5",
+          "name": "LogoIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Logo.jsx"
+        },
+        {
+          "id": "USYMyhdSTJUj",
+          "name": "SphereIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Sphere.jsx"
+        },
+        {
+          "id": "jl9a2ljkZbUL",
+          "name": "QuoteDashesIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__QuoteDashes.jsx"
+        },
+        {
+          "id": "Xf4uM7tBiZpx",
+          "name": "TinderLogoIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__TinderLogo.jsx"
+        },
+        {
+          "id": "V4XdJsnZ7qfj",
+          "name": "AirbnbLogoIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__AirbnbLogo.jsx"
+        },
+        {
+          "id": "D8AvO2dnCPR-",
+          "name": "HubspotLogoIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__HubspotLogo.jsx"
+        },
+        {
+          "id": "cpTTWtRk9MQp",
+          "name": "AmazonLogoIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__AmazonLogo.jsx"
+        },
+        {
+          "id": "wNCM0uukZ7kZ",
+          "name": "SwapIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Swap.jsx"
+        },
+        {
+          "id": "ZHIXBU4fRCk2",
+          "name": "SlotIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Slot.jsx"
+        },
+        {
+          "id": "F1nfD4e8NqAk",
+          "name": "CycleIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Cycle.jsx"
+        },
+        {
+          "id": "k4l-Dm3c3qfC",
+          "name": "HammerIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Hammer.jsx"
+        },
+        {
+          "id": "eaPO9-Mdo-JO",
+          "name": "PencilIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Pencil.jsx"
+        },
+        {
+          "id": "-oVmvg3GfjTc",
+          "name": "LightningIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Lightning.jsx"
+        },
+        {
+          "id": "1F_c2O9V7izs",
+          "name": "RightArrowIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__RightArrow.jsx"
+        },
+        {
+          "id": "D8OpIgeDloI1",
+          "name": "Done24Pxsvg2Icon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Done24Pxsvg2.jsx"
+        },
+        {
+          "id": "18moJXKn3z0E",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Icon.jsx"
+        },
+        {
+          "id": "s5rl-jfrVJ0l",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Checksvg.jsx"
+        },
+        {
+          "id": "gwsBLKJU83VD",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Searchsvg.jsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "eXbLkdPrwvcR",
+          "name": "profilepic",
+          "filePath": "../public/plasmic/vermont_consumer_credit/images/profilepic.png"
+        },
+        {
+          "id": "AFOXwZNk0rkb",
+          "name": "task",
+          "filePath": "../public/plasmic/vermont_consumer_credit/images/task.png"
+        },
+        {
+          "id": "3JlxQeiX9I6z",
+          "name": "simple-project",
+          "filePath": "../public/plasmic/vermont_consumer_credit/images/simpleProject.png"
+        },
+        {
+          "id": "NhotLL9Wt3Jj",
+          "name": "hero-image",
+          "filePath": "../public/plasmic/vermont_consumer_credit/images/heroImage.png"
+        }
+      ],
+      "indirect": false,
+      "codeComponents": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "KCIfFDxm3xN2",
+        "name": "Screen",
+        "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+        "contextFilePath": "plasmic/vermont_consumer_credit/PlasmicGlobalVariant__Screen.jsx"
+      }
+    ]
+  },
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.167",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.167/dist/plasmic.schema.json"
+}
