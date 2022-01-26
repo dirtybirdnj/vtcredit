@@ -55,7 +55,7 @@ function PlasmicHomeCta__RenderFunc(props) {
             sty.text__tapLq
           )}
         >
-          {"Powering your business"}
+          {"Start fixing your credit today"}
         </div>
 
         <div
@@ -66,7 +66,7 @@ function PlasmicHomeCta__RenderFunc(props) {
           )}
         >
           {
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente."
+            "Enter your email address and we will send you materials to get started. When you are ready you can reach out to us to schedule a consultation and work with us together in person."
           }
         </div>
 
@@ -89,7 +89,7 @@ function PlasmicHomeCta__RenderFunc(props) {
             className={classNames("__wab_instance", sty.button)}
             color={"blue"}
           >
-            {"Subscribe"}
+            {"Request Information"}
           </Button>
         </p.Stack>
 
@@ -100,7 +100,9 @@ function PlasmicHomeCta__RenderFunc(props) {
             sty.text__uyJm6
           )}
         >
-          {"7 days free trial. No credit card required."}
+          {
+            " We never share information about our clients, with any third parties."
+          }
         </div>
       </p.Stack>
 

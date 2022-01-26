@@ -35,12 +35,12 @@ function PlasmicBaseCard__RenderFunc(props) {
       data-plasmic-for-node={forNode}
       hasGap={true}
       className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__long]: hasVariant(variants, "long", "long")
+        [sty.rootlong]: hasVariant(variants, "long", "long")
       })}
     >
       <div
         className={classNames(projectcss.all, sty.freeBox__g4Mi3, {
-          [sty.freeBox__long__g4Mi3EpuB3]: hasVariant(variants, "long", "long")
+          [sty.freeBoxlong__g4Mi3EpuB3]: hasVariant(variants, "long", "long")
         })}
       >
         {p.renderPlasmicSlot({
@@ -48,7 +48,7 @@ function PlasmicBaseCard__RenderFunc(props) {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           value: args.children,
           className: classNames(sty.slotTargetChildren, {
-            [sty.slotTargetChildren__long]: hasVariant(variants, "long", "long")
+            [sty.slotTargetChildrenlong]: hasVariant(variants, "long", "long")
           })
         })}
       </div>
@@ -56,11 +56,7 @@ function PlasmicBaseCard__RenderFunc(props) {
       {(hasVariant(variants, "long", "long") ? true : true) ? (
         <div
           className={classNames(projectcss.all, sty.freeBox__f0P3H, {
-            [sty.freeBox__long__f0P3HEpuB3]: hasVariant(
-              variants,
-              "long",
-              "long"
-            )
+            [sty.freeBoxlong__f0P3HEpuB3]: hasVariant(variants, "long", "long")
           })}
         >
           {p.renderPlasmicSlot({

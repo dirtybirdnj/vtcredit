@@ -40,22 +40,18 @@ function PlasmicFeatureCard__RenderFunc(props) {
       data-plasmic-for-node={forNode}
       hasGap={true}
       className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__long]: hasVariant(variants, "long", "long")
+        [sty.rootlong]: hasVariant(variants, "long", "long")
       })}
     >
       {(hasVariant(variants, "long", "long") ? true : true) ? (
         <div
           className={classNames(projectcss.all, sty.freeBox__vfAya, {
-            [sty.freeBox__long__vfAyAnhsol]: hasVariant(
-              variants,
-              "long",
-              "long"
-            )
+            [sty.freeBoxlong__vfAyAnhsol]: hasVariant(variants, "long", "long")
           })}
         >
           <div
             className={classNames(projectcss.all, sty.freeBox__hYpWy, {
-              [sty.freeBox__long__hYpWYnhsol]: hasVariant(
+              [sty.freeBoxlong__hYpWYnhsol]: hasVariant(
                 variants,
                 "long",
                 "long"
@@ -80,14 +76,14 @@ function PlasmicFeatureCard__RenderFunc(props) {
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__zR5AI, {
-          [sty.freeBox__long__zR5AInhsol]: hasVariant(variants, "long", "long")
+          [sty.freeBoxlong__zR5AInhsol]: hasVariant(variants, "long", "long")
         })}
       >
         {p.renderPlasmicSlot({
           defaultContents: "Title",
           value: args.title,
           className: classNames(sty.slotTargetTitle, {
-            [sty.slotTargetTitle__long]: hasVariant(variants, "long", "long")
+            [sty.slotTargetTitlelong]: hasVariant(variants, "long", "long")
           })
         })}
 
@@ -96,7 +92,7 @@ function PlasmicFeatureCard__RenderFunc(props) {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           value: args.description,
           className: classNames(sty.slotTargetDescription, {
-            [sty.slotTargetDescription__long]: hasVariant(
+            [sty.slotTargetDescriptionlong]: hasVariant(
               variants,
               "long",
               "long"
@@ -108,11 +104,7 @@ function PlasmicFeatureCard__RenderFunc(props) {
       {(hasVariant(variants, "long", "long") ? true : true) ? (
         <div
           className={classNames(projectcss.all, sty.freeBox__j4Ohf, {
-            [sty.freeBox__long__j4Ohfnhsol]: hasVariant(
-              variants,
-              "long",
-              "long"
-            )
+            [sty.freeBoxlong__j4Ohfnhsol]: hasVariant(variants, "long", "long")
           })}
         >
           {p.renderPlasmicSlot({

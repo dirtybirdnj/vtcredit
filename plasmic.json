@@ -263,6 +263,32 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "oXrrIsz_4Zs",
+          "name": "HomeDefault",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicHomeDefault.jsx",
+          "importSpec": {
+            "modulePath": "../pages/default.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicHomeDefault.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "lKpLQt4I320",
+          "name": "Basic",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicBasic.jsx",
+          "importSpec": {
+            "modulePath": "../pages/basic.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicBasic.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -397,6 +423,11 @@
           "id": "NhotLL9Wt3Jj",
           "name": "hero-image",
           "filePath": "../public/plasmic/vermont_consumer_credit/images/heroImage.png"
+        },
+        {
+          "id": "sm8XB1Z5F",
+          "name": "hands-up",
+          "filePath": "../public/plasmic/vermont_consumer_credit/images/handsUp.jpeg"
         }
       ],
       "indirect": false,

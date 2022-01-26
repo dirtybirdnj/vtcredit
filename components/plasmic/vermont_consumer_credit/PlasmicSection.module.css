@@ -11,11 +11,11 @@
   min-width: 0;
   padding: 32px;
 }
-.root__color_halfDark {
+.rootcolor_halfDark {
   background: linear-gradient(0deg, rgb(5, 5, 5) 0%, rgb(5, 5, 5) 100%) left 0%
     top 100% / 100% 50% no-repeat;
 }
-.root__color_dark {
+.rootcolor_dark {
   background: rgb(24, 25, 26);
 }
 .content {
@@ -55,7 +55,7 @@
   min-width: 0;
   display: none;
 }
-.titleContainer__hasTitle {
+.titleContainerhasTitle {
   display: flex;
 }
 .slotTargetTitle {
@@ -74,7 +74,7 @@
   min-width: 0;
   display: none;
 }
-.subtitleContainer__hasSubtitle {
+.subtitleContainerhasSubtitle {
   display: flex;
 }
 .slotTargetSubtitle {
@@ -91,12 +91,12 @@
   max-width: 100%;
   min-width: 0;
 }
-.contentContainer__hasTitle {
+.contentContainerhasTitle {
   margin-top: calc(64px + 10px) !important;
 }
-.contentContainer__hasSubtitle {
+.contentContainerhasSubtitle {
   margin-top: calc(64px + 10px) !important;
 }
-.contentContainer__hasTitle_hasSubtitle {
+.contentContainerhasTitle_hasSubtitle {
   margin-top: calc(64px + 10px) !important;
 }
