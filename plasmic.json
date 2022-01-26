@@ -146,19 +146,6 @@
           "componentType": "component"
         },
         {
-          "id": "6sPp355nJZ-s",
-          "name": "Pricing",
-          "type": "managed",
-          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
-          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicPricing.jsx",
-          "importSpec": {
-            "modulePath": "../pages/pricing.jsx"
-          },
-          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicPricing.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "drjN8EGN7rE8",
           "name": "BaseCard",
           "type": "managed",
@@ -209,19 +196,6 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicFaq.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "IeUUNtv-gKNa",
-          "name": "Features",
-          "type": "managed",
-          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
-          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicFeatures.jsx",
-          "importSpec": {
-            "modulePath": "../pages/features.jsx"
-          },
-          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicFeatures.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
         },
         {
           "id": "TeEenYh07CLQ",
@@ -278,15 +252,28 @@
           "componentType": "page"
         },
         {
-          "id": "lKpLQt4I320",
-          "name": "Basic",
+          "id": "6sPp355nJZ-s",
+          "name": "Services",
           "type": "managed",
           "projectId": "9W67x2Pynxr9eDxjdLuGCS",
-          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicBasic.jsx",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicServices.jsx",
           "importSpec": {
-            "modulePath": "../pages/basic.jsx"
+            "modulePath": "../pages/services.jsx"
           },
-          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicBasic.module.css",
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicServices.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "lKpLQt4I320",
+          "name": "About",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicAbout.jsx",
+          "importSpec": {
+            "modulePath": "../pages/about.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicAbout.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }

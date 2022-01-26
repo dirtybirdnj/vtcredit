@@ -78,7 +78,7 @@ function PlasmicHeader__RenderFunc(props) {
         <Button
           className={classNames("__wab_instance", sty.button__n2Hbo)}
           color={"clear"}
-          link={"/features"}
+          link={"/services"}
           size={"compact"}
         >
           {"Services"}
@@ -86,6 +86,15 @@ function PlasmicHeader__RenderFunc(props) {
 
         <Button
           className={classNames("__wab_instance", sty.button__gwXsR)}
+          color={"clear"}
+          link={"/about"}
+          size={"compact"}
+        >
+          {"About"}
+        </Button>
+
+        <Button
+          className={classNames("__wab_instance", sty.button__gpnhi)}
           color={"clear"}
           size={"compact"}
         >

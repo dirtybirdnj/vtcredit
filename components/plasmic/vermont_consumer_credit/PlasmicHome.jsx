@@ -95,7 +95,7 @@ function PlasmicHome__RenderFunc(props) {
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Make your website"
+                      ? "Fix your credit"
                       : "Fix your credit"}
                   </div>
 
@@ -107,7 +107,7 @@ function PlasmicHome__RenderFunc(props) {
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
-                      ? "wonderful"
+                      ? "the right way"
                       : "the right way"}
                   </div>
                 </div>
@@ -120,7 +120,7 @@ function PlasmicHome__RenderFunc(props) {
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever."
+                    ? "Our approach to credit counseling puts the client first and paves the way \nto long-lasting financial stability and success. \n\n🌴 This only shows up on mobile 🌴"
                     : "Our approach to credit counseling puts the client first and paves the way \nto long-lasting financial stability and success"}
                 </div>
               </p.Stack>

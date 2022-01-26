@@ -128,7 +128,7 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.text__j47BP
               )}
             >
-              {"Products"}
+              {"Consumer"}
             </div>
 
             <p.PlasmicLink
@@ -141,7 +141,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Web Studio"}
+              {"Credit Building"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
@@ -154,7 +154,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"DynamicBox Flex"}
+              {"Credit Repair"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
@@ -167,33 +167,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Programming Forms"}
-            </p.PlasmicLink>
-
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__uePVx
-              )}
-              component={Link}
-              href={"#"}
-              platform={"nextjs"}
-            >
-              {"Integrations"}
-            </p.PlasmicLink>
-
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link___7Eha9
-              )}
-              component={Link}
-              href={"#"}
-              platform={"nextjs"}
-            >
-              {"Command-line"}
+              {"Home Ownership Prep"}
             </p.PlasmicLink>
           </p.Stack>
 
@@ -209,7 +183,7 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.text__nqeFq
               )}
             >
-              {"Resources"}
+              {"Corporate"}
             </div>
 
             <p.PlasmicLink
@@ -222,7 +196,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Documentation"}
+              {"Employee Financial Services"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
@@ -235,7 +209,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Tutorials & Guides"}
+              {"Employee Education Workshops"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
@@ -248,33 +222,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Blog"}
-            </p.PlasmicLink>
-
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__xmGdk
-              )}
-              component={Link}
-              href={"#"}
-              platform={"nextjs"}
-            >
-              {"Support Center"}
-            </p.PlasmicLink>
-
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__sVbl
-              )}
-              component={Link}
-              href={"#"}
-              platform={"nextjs"}
-            >
-              {"Partners"}
+              {"Consumer Loytalty Program"}
             </p.PlasmicLink>
           </p.Stack>
 
@@ -329,7 +277,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Company values"}
+              {"Contact"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
@@ -343,19 +291,6 @@ function PlasmicFooter__RenderFunc(props) {
               platform={"nextjs"}
             >
               {"Pricing"}
-            </p.PlasmicLink>
-
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__n2Osm
-              )}
-              component={Link}
-              href={"#"}
-              platform={"nextjs"}
-            >
-              {"Privacy policy"}
             </p.PlasmicLink>
           </p.Stack>
 
@@ -371,7 +306,7 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.text__hyiwc
               )}
             >
-              {"Subscribe"}
+              {"Request Information"}
             </div>
 
             <div
@@ -381,7 +316,9 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.text__hnw9H
               )}
             >
-              {"Get the latest news and articles to your inbox every month."}
+              {
+                "Get our guide on repairing your credit and start improving your situation today."
+              }
             </div>
 
             <TextInput
@@ -465,50 +402,55 @@ function PlasmicFooter__RenderFunc(props) {
           </div>
         </p.Stack>
 
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__zilMx)}
-        >
-          <IconLink
-            className={classNames("__wab_instance", sty.iconLink___0TFo)}
-            icon={
-              <TwitterIconIcon
-                className={classNames(projectcss.all, sty.svg___1CfOu)}
-                role={"img"}
-              />
-            }
-          />
+        {true ? (
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"socialMediaLinks"}
+            data-plasmic-override={overrides.socialMediaLinks}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.socialMediaLinks)}
+          >
+            <IconLink
+              className={classNames("__wab_instance", sty.iconLink___0TFo)}
+              icon={
+                <TwitterIconIcon
+                  className={classNames(projectcss.all, sty.svg___1CfOu)}
+                  role={"img"}
+                />
+              }
+            />
 
-          <IconLink
-            className={classNames("__wab_instance", sty.iconLink__kiQpe)}
-            icon={
-              <GithubIconIcon
-                className={classNames(projectcss.all, sty.svg___3AkQm)}
-                role={"img"}
-              />
-            }
-          />
+            <IconLink
+              className={classNames("__wab_instance", sty.iconLink__kiQpe)}
+              icon={
+                <GithubIconIcon
+                  className={classNames(projectcss.all, sty.svg___3AkQm)}
+                  role={"img"}
+                />
+              }
+            />
 
-          <IconLink
-            className={classNames("__wab_instance", sty.iconLink__sDoFd)}
-            icon={
-              <FacebookIconIcon
-                className={classNames(projectcss.all, sty.svg___55Ypc)}
-                role={"img"}
-              />
-            }
-          />
-        </p.Stack>
+            <IconLink
+              className={classNames("__wab_instance", sty.iconLink__sDoFd)}
+              icon={
+                <FacebookIconIcon
+                  className={classNames(projectcss.all, sty.svg___55Ypc)}
+                  role={"img"}
+                />
+              }
+            />
+          </p.Stack>
+        ) : null}
       </p.Stack>
     </p.Stack>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textInput", "textbox", "button"],
+  root: ["root", "textInput", "textbox", "button", "socialMediaLinks"],
   textInput: ["textInput", "textbox", "button"],
-  button: ["button"]
+  button: ["button"],
+  socialMediaLinks: ["socialMediaLinks"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -542,6 +484,7 @@ export const PlasmicFooter = Object.assign(
     // Helper components rendering sub-elements
     textInput: makeNodeComponent("textInput"),
     button: makeNodeComponent("button"),
+    socialMediaLinks: makeNodeComponent("socialMediaLinks"),
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,
     internalArgProps: PlasmicFooter__ArgProps
