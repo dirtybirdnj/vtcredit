@@ -166,9 +166,9 @@ function PlasmicHome__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"100%"}
                   src={{
-                    src: "/plasmic/vermont_consumer_credit/images/handsUp.jpeg",
-                    fullWidth: 3276,
-                    fullHeight: 4096,
+                    src: "/plasmic/vermont_consumer_credit/images/paperwork2.jpeg",
+                    fullWidth: 4096,
+                    fullHeight: 2733,
                     aspectRatio: undefined
                   }}
                 />

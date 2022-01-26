@@ -415,6 +415,11 @@
           "id": "sm8XB1Z5F",
           "name": "hands-up",
           "filePath": "../public/plasmic/vermont_consumer_credit/images/handsUp.jpeg"
+        },
+        {
+          "id": "jhiYEadXl",
+          "name": "paperwork-2",
+          "filePath": "../public/plasmic/vermont_consumer_credit/images/paperwork2.jpeg"
         }
       ],
       "indirect": false,

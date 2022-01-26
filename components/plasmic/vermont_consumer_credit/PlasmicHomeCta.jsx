@@ -23,7 +23,6 @@ import { useScreenVariants as useScreenVariantskcIfFDxm3XN2 } from "./PlasmicGlo
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicHomeCta.module.css"; // plasmic-import: VxyCfCXPu8O/css
-import SphereIcon from "./icons/PlasmicIcon__Sphere"; // plasmic-import: USYMyhdSTJUj/icon
 
 export const PlasmicHomeCta__VariantProps = new Array();
 
@@ -108,11 +107,24 @@ function PlasmicHomeCta__RenderFunc(props) {
 
       {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
         <div className={classNames(projectcss.all, sty.freeBox__aD7Mz)}>
-          <SphereIcon
-            data-plasmic-name={"svg"}
-            data-plasmic-override={overrides.svg}
-            className={classNames(projectcss.all, sty.svg)}
-            role={"img"}
+          <p.PlasmicImg
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: "/plasmic/vermont_consumer_credit/images/handsUp.jpeg",
+              fullWidth: 3276,
+              fullHeight: 4096,
+              aspectRatio: undefined
+            }}
           />
         </div>
       ) : null}
@@ -121,10 +133,10 @@ function PlasmicHomeCta__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textInput", "textbox", "button", "svg"],
+  root: ["root", "textInput", "textbox", "button", "img"],
   textInput: ["textInput", "textbox"],
   button: ["button"],
-  svg: ["svg"]
+  img: ["img"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -158,7 +170,7 @@ export const PlasmicHomeCta = Object.assign(
     // Helper components rendering sub-elements
     textInput: makeNodeComponent("textInput"),
     button: makeNodeComponent("button"),
-    svg: makeNodeComponent("svg"),
+    img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicHomeCta
     internalVariantProps: PlasmicHomeCta__VariantProps,
     internalArgProps: PlasmicHomeCta__ArgProps
