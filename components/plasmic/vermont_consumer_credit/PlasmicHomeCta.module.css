@@ -17,17 +17,17 @@
   }
 }
 .freeBox__npCgM {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
   width: 60%;
   max-width: 1104px /* plasmic-token: Jrg5TblqjqhJ */;
   padding: 64px 48px;
 }
 .freeBox__npCgM > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: stretch;
   justify-content: center;
+  align-items: stretch;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
 }
@@ -64,14 +64,14 @@
   color: rgb(176, 179, 184) /* plasmic-token: TRf5pfsHwLE */;
 }
 .freeBox__i9Cx3 {
+  flex-direction: row;
   display: flex;
   position: relative;
-  flex-direction: row;
 }
 .freeBox__i9Cx3 > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }

@@ -47,7 +47,7 @@ function PlasmicHeader__RenderFunc(props) {
       <p.PlasmicLink
         data-plasmic-name={"link"}
         data-plasmic-override={overrides.link}
-        className={classNames(projectcss.a, sty.link)}
+        className={classNames(projectcss.all, projectcss.a, sty.link)}
         component={Link}
         href={"/"}
         platform={"nextjs"}
@@ -65,7 +65,7 @@ function PlasmicHeader__RenderFunc(props) {
         data-plasmic-override={overrides.text}
         className={classNames(projectcss.all, projectcss.__wab_text, sty.text)}
       >
-        {"VT Consumer Credit Consulting"}
+        {"Vermont Consumer Consulting"}
       </div>
 
       <p.Stack

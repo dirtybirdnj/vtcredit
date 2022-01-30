@@ -96,7 +96,7 @@ function PlasmicHome__RenderFunc(props) {
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
                       ? "Fix your credit"
-                      : "Fix your credit"}
+                      : "Become a better"}
                   </div>
 
                   <div
@@ -108,7 +108,7 @@ function PlasmicHome__RenderFunc(props) {
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
                       ? "the right way"
-                      : "the right way"}
+                      : "financial products consumer"}
                   </div>
                 </div>
 
@@ -121,7 +121,7 @@ function PlasmicHome__RenderFunc(props) {
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Our approach to credit counseling puts the client first and paves the way \nto long-lasting financial stability and success. \n\n🌴 This only shows up on mobile 🌴"
-                    : "Our approach to credit counseling puts the client first and paves the way \nto long-lasting financial stability and success"}
+                    : "Our approach to financial consumer counseling puts the client first \nand paves the way to sustainable financial behavior"}
                 </div>
               </p.Stack>
 
@@ -143,14 +143,24 @@ function PlasmicHome__RenderFunc(props) {
                   }
                   showEndIcon={true}
                 >
-                  {"Request a Consultation"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ionqj
+                    )}
+                  >
+                    {"Request a Consultation"}
+                  </div>
                 </Button>
 
-                <Button
-                  className={classNames("__wab_instance", sty.button__cv9S9)}
-                >
-                  {"Learn more"}
-                </Button>
+                {true ? (
+                  <Button
+                    className={classNames("__wab_instance", sty.button__cv9S9)}
+                  >
+                    {"Learn more"}
+                  </Button>
+                ) : null}
               </p.Stack>
 
               <div className={classNames(projectcss.all, sty.freeBox__nvugP)}>

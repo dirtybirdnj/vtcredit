@@ -2,14 +2,14 @@
   position: relative;
 }
 .freeBox__rZ07I {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
 }
 .freeBox__rZ07I > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-start;
+  align-items: flex-start;
   margin-top: calc(0px - 8px);
   height: calc(100% + 8px);
 }

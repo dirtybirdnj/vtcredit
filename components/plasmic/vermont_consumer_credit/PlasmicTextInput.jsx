@@ -114,7 +114,7 @@ function PlasmicTextInput__RenderFunc(props) {
       <input
         data-plasmic-name={"input"}
         data-plasmic-override={overrides.input}
-        className={classNames(projectcss.input, sty.input, {
+        className={classNames(projectcss.all, projectcss.input, sty.input, {
           [sty.input___focusVisibleWithin]: triggers.focusVisibleWithin_root,
           [sty.inputcolor_dark]: hasVariant(variants, "color", "dark"),
           [sty.inputfontSize_small]: hasVariant(variants, "fontSize", "small"),

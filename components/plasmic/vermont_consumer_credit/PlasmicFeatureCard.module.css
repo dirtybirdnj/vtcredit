@@ -1,9 +1,9 @@
 .root {
+  flex-direction: column;
   display: flex;
   width: 352px;
   height: 195px;
   position: relative;
-  flex-direction: column;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.12),
     0px 10px 10px -5px rgba(0, 0, 0, 0.02);
   background: rgb(255, 255, 255);
@@ -82,14 +82,14 @@
   flex-shrink: 0;
 }
 .freeBox__zR5AI {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
 }
 .freeBox__zR5AI > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-top: calc(0px - 8px);
   height: calc(100% + 8px);
 }

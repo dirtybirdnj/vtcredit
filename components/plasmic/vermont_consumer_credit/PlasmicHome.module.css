@@ -1,7 +1,7 @@
 .root {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
   width: 100%;
   height: 100%;
   min-width: 0;
@@ -9,8 +9,8 @@
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   min-width: 0;
   min-height: 0;
   margin-top: calc(0px - 64px);
@@ -43,18 +43,18 @@
   position: relative;
 }
 .freeBox__pO4Au {
+  flex-direction: column;
   width: 100%;
   height: auto;
   max-width: 1104px /* plasmic-token: Jrg5TblqjqhJ */;
   display: flex;
   position: relative;
-  flex-direction: column;
   min-width: 0;
 }
 .freeBox__pO4Au > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   min-width: 0;
   margin-top: calc(0px - 32px);
   height: calc(100% + 32px);
@@ -106,17 +106,17 @@
   }
 }
 .freeBox__m9Knd {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
   width: 100%;
   max-width: 1000px;
   min-width: 0;
 }
 .freeBox__m9Knd > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   min-width: 0;
   margin-top: calc(0px - 32px);
   height: calc(100% + 32px);
@@ -174,7 +174,7 @@
   justify-content: flex-start;
 }
 .text__ghjKy {
-  font-size: 96px;
+  font-size: 75px;
   font-weight: 700;
   text-align: center;
   line-height: 1;
@@ -190,7 +190,7 @@
   }
 }
 .text___5Fuor {
-  font-size: 96px;
+  font-size: 75px;
   font-weight: 700;
   text-align: center;
   line-height: 1;
@@ -240,14 +240,14 @@
   }
 }
 .freeBox__lpT7G {
+  flex-direction: row;
   display: flex;
   position: relative;
-  flex-direction: row;
 }
 .freeBox__lpT7G > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-left: calc(0px - 12px);
   width: calc(100% + 12px);
 }
@@ -270,6 +270,10 @@
   width: 24px;
   height: 24px;
 }
+.text__ionqj {
+  font-size: 24px;
+  padding: 10px;
+}
 .svg {
   position: relative;
   object-fit: cover;
@@ -278,6 +282,7 @@
 }
 .button__cv9S9:global(.__wab_instance) {
   position: relative;
+  display: none;
 }
 .svg__hTnVe {
   position: relative;

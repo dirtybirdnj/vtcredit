@@ -38,15 +38,15 @@
   }
 }
 .freeBox {
+  flex-direction: row;
   display: flex;
   position: relative;
-  flex-direction: row;
   width: auto;
 }
 .freeBox > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   margin-left: calc(0px - 20px);
   width: calc(100% + 20px);
 }
@@ -129,6 +129,7 @@
 }
 .button___57CmN:global(.__wab_instance) {
   position: relative;
+  display: none;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .button___57CmN:global(.__wab_instance) {
