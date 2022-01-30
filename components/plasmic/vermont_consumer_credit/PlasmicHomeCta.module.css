@@ -116,6 +116,7 @@
 }
 .textInput:global(.__wab_instance) {
   position: relative;
+  display: none;
 }
 .svg__dQeYt {
   position: relative;
@@ -138,7 +139,7 @@
   width: 24px;
   height: 24px;
 }
-.svg__p98X {
+.svg {
   position: relative;
   object-fit: cover;
   width: 24px;

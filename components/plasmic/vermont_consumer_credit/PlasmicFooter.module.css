@@ -118,6 +118,7 @@
 .iconLink__nSLhU:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
+  display: none;
 }
 .svg__nNFb1 {
   position: relative;
@@ -242,20 +243,20 @@
 .root .link__iatC:hover {
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
 }
-.link__iEAy {
+.link__wXx1M {
+  font-size: 14px;
   position: relative;
   color: #666666 /* plasmic-token: btwIxFafpquw */;
-  font-size: 14px;
 }
-.root .link__iEAy:hover {
+.root .link__wXx1M:hover {
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
 }
-.link__yd8Sd {
+.link__vwUdh {
+  font-size: 14px;
   position: relative;
   color: #666666 /* plasmic-token: btwIxFafpquw */;
-  font-size: 14px;
 }
-.root .link__yd8Sd:hover {
+.root .link__vwUdh:hover {
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
 }
 .freeBox__lAoKd {
@@ -362,81 +363,6 @@
 }
 .root .link__eB5G:hover {
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
-}
-.link__hsVf6 {
-  position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
-  font-size: 14px;
-}
-.root .link__hsVf6:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
-}
-.freeBox___2A8PO {
-  flex-direction: column;
-  display: flex;
-  position: relative;
-  width: 200px;
-  flex-shrink: 0;
-}
-.freeBox___2A8PO > :global(.__wab_flex-container) {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  margin-top: calc(0px - 8px);
-  height: calc(100% + 8px);
-}
-.freeBox___2A8PO > :global(.__wab_flex-container) > *,
-.freeBox___2A8PO > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.freeBox___2A8PO > :global(.__wab_flex-container) > picture > img,
-.freeBox___2A8PO
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 8px;
-}
-.text__hyiwc {
-  position: relative;
-  font-weight: 500;
-  font-size: 16px;
-}
-.text__hnw9H {
-  position: relative;
-  font-size: 14px;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
-}
-.textInput:global(.__wab_instance) {
-  position: relative;
-}
-.svg__hZoad {
-  position: relative;
-  object-fit: cover;
-  width: 24px;
-  height: 24px;
-}
-.button:global(.__wab_instance) {
-  position: relative;
-}
-.svg__maBuw {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  color: rgb(24, 119, 242) /* plasmic-token: p-fCTrfjtL4 */;
-  width: 1em;
-  height: 1em;
-}
-.svg__qhFTd {
-  position: relative;
-  object-fit: cover;
-  width: 12px;
-  height: 12px;
-  color: rgb(24, 119, 242) /* plasmic-token: p-fCTrfjtL4 */;
-}
-.svg__im6O8 {
-  position: relative;
-  object-fit: cover;
-  width: 24px;
-  height: 24px;
 }
 .freeBox___9BVlP {
   display: block;

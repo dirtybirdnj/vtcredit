@@ -23,6 +23,7 @@ import { useScreenVariants as useScreenVariantskcIfFDxm3XN2 } from "./PlasmicGlo
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicHomeCta.module.css"; // plasmic-import: VxyCfCXPu8O/css
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 18moJXKn3z0E/icon
 
 export const PlasmicHomeCta__VariantProps = new Array();
 
@@ -54,7 +55,7 @@ function PlasmicHomeCta__RenderFunc(props) {
             sty.text__tapLq
           )}
         >
-          {"Start fixing your credit today"}
+          {"Get the most from your lender "}
         </div>
 
         <div
@@ -65,7 +66,7 @@ function PlasmicHomeCta__RenderFunc(props) {
           )}
         >
           {
-            "Enter your email address and we will send you materials to get started. When you are ready you can reach out to us to schedule a consultation and work with us together in person."
+            "Your lender can provide you financial services and can help overcome financial hurdles. Work with us to become a more informed financial consumer and get the most from your consumer financial institutions."
           }
         </div>
 
@@ -74,21 +75,32 @@ function PlasmicHomeCta__RenderFunc(props) {
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__i9Cx3)}
         >
-          <TextInput
-            data-plasmic-name={"textInput"}
-            data-plasmic-override={overrides.textInput}
-            className={classNames("__wab_instance", sty.textInput)}
-            color={"dark"}
-            placeholder={"Your email..."}
-          />
+          {true ? (
+            <TextInput
+              data-plasmic-name={"textInput"}
+              data-plasmic-override={overrides.textInput}
+              className={classNames("__wab_instance", sty.textInput)}
+              color={"dark"}
+              placeholder={"Your email..."}
+            />
+          ) : null}
 
           <Button
             data-plasmic-name={"button"}
             data-plasmic-override={overrides.button}
             className={classNames("__wab_instance", sty.button)}
             color={"blue"}
+            endIcon={
+              <IconIcon
+                data-plasmic-name={"svg"}
+                data-plasmic-override={overrides.svg}
+                className={classNames(projectcss.all, sty.svg)}
+                role={"img"}
+              />
+            }
+            showEndIcon={true}
           >
-            {"Request Information"}
+            {"Request a Consultation"}
           </Button>
         </p.Stack>
 
@@ -100,7 +112,7 @@ function PlasmicHomeCta__RenderFunc(props) {
           )}
         >
           {
-            " We never share information about our clients, with any third parties."
+            " We never share information about our clients with any third parties."
           }
         </div>
       </p.Stack>
@@ -133,9 +145,10 @@ function PlasmicHomeCta__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textInput", "textbox", "button", "img"],
+  root: ["root", "textInput", "textbox", "button", "svg", "img"],
   textInput: ["textInput", "textbox"],
-  button: ["button"],
+  button: ["button", "svg"],
+  svg: ["svg"],
   img: ["img"]
 };
 
@@ -170,6 +183,7 @@ export const PlasmicHomeCta = Object.assign(
     // Helper components rendering sub-elements
     textInput: makeNodeComponent("textInput"),
     button: makeNodeComponent("button"),
+    svg: makeNodeComponent("svg"),
     img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicHomeCta
     internalVariantProps: PlasmicHomeCta__VariantProps,

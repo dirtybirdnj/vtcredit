@@ -18,14 +18,11 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import IconLink from "../../IconLink"; // plasmic-import: EjLZdJRjcnq/component
-import TextInput from "../../TextInput"; // plasmic-import: b5fDbSitrgRQ/component
-import Button from "../../Button"; // plasmic-import: jRx1E81mYCIy/component
 import { useScreenVariants as useScreenVariantskcIfFDxm3XN2 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: KCIfFDxm3xN2/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: R265Q5ctgGy/css
 import LogoIcon from "./icons/PlasmicIcon__Logo"; // plasmic-import: ajsvomRNRyt5/icon
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 18moJXKn3z0E/icon
 import TwitterIconIcon from "./icons/PlasmicIcon__TwitterIcon"; // plasmic-import: VeC2uT8KWQf7/icon
 import GithubIconIcon from "./icons/PlasmicIcon__GithubIcon"; // plasmic-import: BmWl-acuNUPO/icon
 import FacebookIconIcon from "./icons/PlasmicIcon__FacebookIcon"; // plasmic-import: X4N2ic5_a6uK/icon
@@ -62,15 +59,17 @@ function PlasmicFooter__RenderFunc(props) {
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__jPby2)}
         >
-          <IconLink
-            className={classNames("__wab_instance", sty.iconLink__nSLhU)}
-            icon={
-              <LogoIcon
-                className={classNames(projectcss.all, sty.svg__nNFb1)}
-                role={"img"}
-              />
-            }
-          />
+          {true ? (
+            <IconLink
+              className={classNames("__wab_instance", sty.iconLink__nSLhU)}
+              icon={
+                <LogoIcon
+                  className={classNames(projectcss.all, sty.svg__nNFb1)}
+                  role={"img"}
+                />
+              }
+            />
+          ) : null}
 
           <div className={classNames(projectcss.all, sty.freeBox__cz9Q)}>
             <p.PlasmicLink
@@ -144,7 +143,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Credit Building"}
+              {"Loan Workshops"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
@@ -152,13 +151,13 @@ function PlasmicFooter__RenderFunc(props) {
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.link__iEAy
+                sty.link__wXx1M
               )}
               component={Link}
               href={"#"}
               platform={"nextjs"}
             >
-              {"Credit Repair"}
+              {"Consumer Lending"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
@@ -166,13 +165,13 @@ function PlasmicFooter__RenderFunc(props) {
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.link__yd8Sd
+                sty.link__vwUdh
               )}
               component={Link}
               href={"#"}
               platform={"nextjs"}
             >
-              {"Home Ownership Prep"}
+              {"Home Ownership"}
             </p.PlasmicLink>
           </p.Stack>
 
@@ -202,7 +201,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Employee Financial Services"}
+              {"Financial Services"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
@@ -216,7 +215,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Employee Education Workshops"}
+              {"Employee Workshops"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
@@ -230,7 +229,7 @@ function PlasmicFooter__RenderFunc(props) {
               href={"#"}
               platform={"nextjs"}
             >
-              {"Consumer Loytalty Program"}
+              {"Corporate Program"}
             </p.PlasmicLink>
           </p.Stack>
 
@@ -290,77 +289,6 @@ function PlasmicFooter__RenderFunc(props) {
             >
               {"Contact"}
             </p.PlasmicLink>
-
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__hsVf6
-              )}
-              component={Link}
-              href={"#"}
-              platform={"nextjs"}
-            >
-              {"Pricing"}
-            </p.PlasmicLink>
-          </p.Stack>
-
-          <p.Stack
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox___2A8PO)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__hyiwc
-              )}
-            >
-              {"Request Information"}
-            </div>
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__hnw9H
-              )}
-            >
-              {
-                "Get our guide on repairing your credit and start improving your situation today."
-              }
-            </div>
-
-            <TextInput
-              data-plasmic-name={"textInput"}
-              data-plasmic-override={overrides.textInput}
-              className={classNames("__wab_instance", sty.textInput)}
-              endIcon={
-                <Button
-                  data-plasmic-name={"button"}
-                  data-plasmic-override={overrides.button}
-                  className={classNames("__wab_instance", sty.button)}
-                  color={"clear"}
-                  size={"compact"}
-                  startIcon={
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__maBuw)}
-                      role={"img"}
-                    />
-                  }
-                >
-                  <IconIcon
-                    className={classNames(projectcss.all, sty.svg__qhFTd)}
-                    role={"img"}
-                  />
-                </Button>
-              }
-              fontSize={"small"}
-              placeholder={"Your email"}
-              showEndIcon={true}
-            />
           </p.Stack>
         </p.Stack>
       </p.Stack>
@@ -388,7 +316,7 @@ function PlasmicFooter__RenderFunc(props) {
             href={"/"}
             platform={"nextjs"}
           >
-            {"VT Consumer Credit Consulting"}
+            {"Vermont Consumer Consulting"}
           </p.PlasmicLink>
 
           <p.PlasmicLink
@@ -461,9 +389,7 @@ function PlasmicFooter__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textInput", "textbox", "button", "socialMediaLinks"],
-  textInput: ["textInput", "textbox", "button"],
-  button: ["button"],
+  root: ["root", "socialMediaLinks"],
   socialMediaLinks: ["socialMediaLinks"]
 };
 
@@ -496,8 +422,6 @@ export const PlasmicFooter = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    textInput: makeNodeComponent("textInput"),
-    button: makeNodeComponent("button"),
     socialMediaLinks: makeNodeComponent("socialMediaLinks"),
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,
