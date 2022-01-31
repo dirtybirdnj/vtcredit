@@ -103,9 +103,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3Zwqv
                         )}
                       >
-                        {
-                          "Establish Credit and Credit Education for 18+ adults."
-                        }
+                        {"Consumer Lending Education"}
                       </div>
 
                       <div
@@ -115,7 +113,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__zE7Sg
                         )}
                       >
-                        {"Post Bankruptciy credit development"}
+                        {"Post Bankruptcy Consumer Development"}
                       </div>
 
                       <div
@@ -125,12 +123,20 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3O6Em
                         )}
                       >
-                        {"Life changing events and credit establishment"}
+                        {"Life Changing Events and Finance"}
                       </div>
                     </React.Fragment>
                   }
                 >
-                  {"Credit Building"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___8Uzwp
+                    )}
+                  >
+                    {"Loan Workshops"}
+                  </div>
                 </Faq>
 
                 <Faq
@@ -144,17 +150,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__wgHa2
                         )}
                       >
-                        {"Credit Review, Education and Credit Plan"}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__zE7Sg
-                        )}
-                      >
-                        {"Debt mitigation, negotiation and Credit Errors"}
+                        {"Debt Management Strategies"}
                       </div>
 
                       <div
@@ -164,12 +160,20 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3O6Em
                         )}
                       >
-                        {"Hardship management"}
+                        {"Hardship Management and Planning"}
                       </div>
                     </React.Fragment>
                   }
                 >
-                  {"Credit Repair"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__yWIn
+                    )}
+                  >
+                    {"Consumer Lending"}
+                  </div>
                 </Faq>
 
                 <Faq
@@ -183,7 +187,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__xm9Si
                         )}
                       >
-                        {"Education"}
+                        {"Consumer Finance Education"}
                       </div>
 
                       <div
@@ -208,7 +212,7 @@ function PlasmicServices__RenderFunc(props) {
                     </React.Fragment>
                   }
                 >
-                  {"Home Ownership Prep"}
+                  {"Home Ownership"}
                 </Faq>
               </p.Stack>
 
@@ -238,7 +242,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__rheLc
                         )}
                       >
-                        {"Emergency credit repair"}
+                        {"Emergency Finance Triage"}
                       </div>
 
                       <div
@@ -248,7 +252,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__zE7Sg
                         )}
                       >
-                        {"Hardship credit counsuling"}
+                        {"Financial Hardship Consulting"}
                       </div>
 
                       <div
@@ -258,12 +262,12 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3O6Em
                         )}
                       >
-                        {"Professional partnership collaboration"}
+                        {"Professional Partnership Collaboration"}
                       </div>
                     </React.Fragment>
                   }
                 >
-                  {"Special Credit Services"}
+                  {"Financial Services"}
                 </Faq>
 
                 <Faq
@@ -277,7 +281,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___5J5J1
                         )}
                       >
-                        {"Employer provided benefit"}
+                        {"Employer Provided Benefit"}
                       </div>
 
                       <div
@@ -292,36 +296,7 @@ function PlasmicServices__RenderFunc(props) {
                     </React.Fragment>
                   }
                 >
-                  {"Employee Financial Services"}
-                </Faq>
-
-                <Faq
-                  className={classNames("__wab_instance", sty.faq__eqsNs)}
-                  slot={
-                    <React.Fragment>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__efBFj
-                        )}
-                      >
-                        {"Credit Education"}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__zE7Sg
-                        )}
-                      >
-                        {"Consumer  Finance Education"}
-                      </div>
-                    </React.Fragment>
-                  }
-                >
-                  {"EEW Employee Education Workshops"}
+                  {"Employee Workshops"}
                 </Faq>
 
                 <Faq
@@ -335,9 +310,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___9SRZ
                         )}
                       >
-                        {
-                          "Customer referral service (credit / lending mitigation)"
-                        }
+                        {"Customer Referral Service (Loan Mitigation)"}
                       </div>
 
                       <div
@@ -347,7 +320,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__zE7Sg
                         )}
                       >
-                        {"Business based benefits for consumer"}
+                        {"Business Based Benefits for Consumer"}
                       </div>
 
                       <div
@@ -357,7 +330,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3O6Em
                         )}
                       >
-                        {"Reduction in lending denials"}
+                        {"Reduction in Lending Denials"}
                       </div>
                     </React.Fragment>
                   }
@@ -369,7 +342,7 @@ function PlasmicServices__RenderFunc(props) {
                       sty.text__mFNrb
                     )}
                   >
-                    {"CLP Consumer Loyalty Program"}
+                    {"Corporate Programs"}
                   </div>
                 </Faq>
               </p.Stack>
