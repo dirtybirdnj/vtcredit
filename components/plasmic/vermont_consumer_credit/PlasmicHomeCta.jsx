@@ -21,6 +21,7 @@ import TextInput from "../../TextInput"; // plasmic-import: b5fDbSitrgRQ/compone
 import Button from "../../Button"; // plasmic-import: jRx1E81mYCIy/component
 import { useScreenVariants as useScreenVariantskcIfFDxm3XN2 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: KCIfFDxm3xN2/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicHomeCta.module.css"; // plasmic-import: VxyCfCXPu8O/css
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 18moJXKn3z0E/icon
@@ -41,7 +42,14 @@ function PlasmicHomeCta__RenderFunc(props) {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_tokens,
+        plasmic_library_plasmic_color_type_css.plasmic_tokens,
+        sty.root
+      )}
     >
       <p.Stack
         as={"div"}

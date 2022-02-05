@@ -13,8 +13,8 @@
   border: 1px solid #dbdbd7;
 }
 .rootcolor_dark {
-  background: rgb(50, 52, 54);
-  border-color: rgb(74, 76, 79) /* plasmic-token: QQdIvJFj1 */;
+  background: var(--token-T5L5Js4u0Cm);
+  border-color: var(--token-QQdIvJFj1);
 }
 .root:hover {
   border-color: #c8c7c1;
@@ -69,7 +69,7 @@
 }
 .inputcolor_dark {
   background: #ffffff00;
-  color: rgb(255, 255, 255) /* plasmic-token: 84P6btZVPbKf */;
+  color: var(--token-84P6btZVPbKf);
 }
 .inputfontSize_small {
   font-size: 12px;

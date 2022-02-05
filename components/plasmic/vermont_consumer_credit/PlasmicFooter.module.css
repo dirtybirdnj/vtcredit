@@ -32,13 +32,13 @@
   height: 1px;
   min-width: 0;
   flex-shrink: 0;
-  border: 1px solid rgb(234, 234, 234) /* plasmic-token: oviEzCCWrsKq */;
+  border: 1px solid var(--token-oviEzCCWrsKq);
 }
 .freeBox__uVzoE {
   flex-direction: row;
   width: 100%;
   height: auto;
-  max-width: 1104px /* plasmic-token: Jrg5TblqjqhJ */;
+  max-width: var(--token-Jrg5TblqjqhJ);
   display: flex;
   position: relative;
   left: auto;
@@ -123,7 +123,7 @@
 .svg__nNFb1 {
   position: relative;
   object-fit: cover;
-  color: rgb(101, 103, 107) /* plasmic-token: vaTuh5tFL3B */;
+  color: var(--token-vaTuh5tFL3B);
   width: 32px;
   height: 32px;
 }
@@ -135,26 +135,26 @@
   justify-content: flex-start;
 }
 .link__xjgJ {
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   font-size: 14px;
 }
 .root .link__xjgJ:hover {
   text-decoration-line: underline;
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .text__dGp5 {
   position: relative;
   font-size: 14px;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
 }
 .link__dnXm {
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   font-size: 14px;
 }
 .root .link__dnXm:hover {
   text-decoration-line: underline;
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .freeBox__o84Ev {
   flex-direction: row;
@@ -238,26 +238,26 @@
 .link__iatC {
   font-size: 14px;
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
 }
 .root .link__iatC:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .link__wXx1M {
   font-size: 14px;
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
 }
 .root .link__wXx1M:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .link__vwUdh {
   font-size: 14px;
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
 }
 .root .link__vwUdh:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .freeBox__lAoKd {
   flex-direction: column;
@@ -290,27 +290,27 @@
 }
 .link__ckcgv {
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   font-size: 14px;
 }
 .root .link__ckcgv:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .link__zxIj0 {
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   font-size: 14px;
 }
 .root .link__zxIj0:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .link__zaPwu {
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   font-size: 14px;
 }
 .root .link__zaPwu:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .freeBox__yr1Hm {
   flex-direction: column;
@@ -342,27 +342,27 @@
 }
 .link__xnc0L {
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   font-size: 14px;
 }
 .root .link__xnc0L:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .link__bHQz {
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   font-size: 14px;
 }
 .root .link__bHQz:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .link__eB5G {
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   font-size: 14px;
 }
 .root .link__eB5G:hover {
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .freeBox___9BVlP {
   display: block;
@@ -371,13 +371,13 @@
   height: 1px;
   min-width: 0;
   flex-shrink: 0;
-  border: 1px solid rgb(234, 234, 234) /* plasmic-token: oviEzCCWrsKq */;
+  border: 1px solid var(--token-oviEzCCWrsKq);
 }
 .freeBox__sZx0Z {
   flex-direction: row;
   width: 100%;
   height: auto;
-  max-width: 1104px /* plasmic-token: Jrg5TblqjqhJ */;
+  max-width: var(--token-Jrg5TblqjqhJ);
   display: flex;
   position: relative;
   left: auto;
@@ -442,7 +442,7 @@
 }
 .link__rwOS {
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   height: auto;
   font-size: 14px;
 }
@@ -451,7 +451,7 @@
 }
 .link__ecLm4 {
   position: relative;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
   font-size: 14px;
 }
 .root .link__ecLm4:hover {
@@ -462,7 +462,7 @@
   height: auto;
   width: auto;
   font-size: 14px;
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
 }
 .socialMediaLinks {
   flex-direction: row;
@@ -493,12 +493,12 @@
 .svg___1CfOu {
   position: relative;
   object-fit: cover;
-  color: rgb(101, 103, 107) /* plasmic-token: vaTuh5tFL3B */;
+  color: var(--token-vaTuh5tFL3B);
   width: 32px;
   height: 32px;
 }
 .root .svg___1CfOu:hover {
-  color: rgb(24, 25, 26) /* plasmic-token: dph1wZ7NjV9 */;
+  color: var(--token-dph1wZ7NjV9);
 }
 .iconLink__kiQpe:global(.__wab_instance) {
   position: relative;
@@ -507,12 +507,12 @@
 .svg___3AkQm {
   position: relative;
   object-fit: cover;
-  color: rgb(101, 103, 107) /* plasmic-token: vaTuh5tFL3B */;
+  color: var(--token-vaTuh5tFL3B);
   width: 32px;
   height: 32px;
 }
 .root .svg___3AkQm:hover {
-  color: rgb(24, 25, 26) /* plasmic-token: dph1wZ7NjV9 */;
+  color: var(--token-dph1wZ7NjV9);
 }
 .iconLink__sDoFd:global(.__wab_instance) {
   position: relative;
@@ -521,10 +521,10 @@
 .svg___55Ypc {
   position: relative;
   object-fit: cover;
-  color: rgb(101, 103, 107) /* plasmic-token: vaTuh5tFL3B */;
+  color: var(--token-vaTuh5tFL3B);
   width: 32px;
   height: 32px;
 }
 .root .svg___55Ypc:hover {
-  color: rgb(24, 25, 26) /* plasmic-token: dph1wZ7NjV9 */;
+  color: var(--token-dph1wZ7NjV9);
 }

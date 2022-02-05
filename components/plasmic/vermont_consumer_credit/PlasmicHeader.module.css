@@ -1,7 +1,7 @@
 .root {
   width: 100%;
   height: auto;
-  max-width: 1104px /* plasmic-token: Jrg5TblqjqhJ */;
+  max-width: var(--token-Jrg5TblqjqhJ);
   display: flex;
   position: relative;
   justify-content: space-between;

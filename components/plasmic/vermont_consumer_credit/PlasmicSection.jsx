@@ -17,6 +17,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicSection.module.css"; // plasmic-import: TeEenYh07CLQ/css
 
@@ -40,15 +41,23 @@ function PlasmicSection__RenderFunc(props) {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
-        [sty.rootcolor_dark]: hasVariant(variants, "color", "dark"),
-        [sty.rootcolor_halfDark]: hasVariant(variants, "color", "halfDark"),
-        [sty.roothasSubtitle]: hasVariant(
-          variants,
-          "hasSubtitle",
-          "hasSubtitle"
-        )
-      })}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_tokens,
+        plasmic_library_plasmic_color_type_css.plasmic_tokens,
+        sty.root,
+        {
+          [sty.rootcolor_dark]: hasVariant(variants, "color", "dark"),
+          [sty.rootcolor_halfDark]: hasVariant(variants, "color", "halfDark"),
+          [sty.roothasSubtitle]: hasVariant(
+            variants,
+            "hasSubtitle",
+            "hasSubtitle"
+          )
+        }
+      )}
     >
       <p.Stack
         as={"div"}

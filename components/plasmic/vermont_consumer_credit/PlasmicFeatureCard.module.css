@@ -6,10 +6,10 @@
   position: relative;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.12),
     0px 10px 10px -5px rgba(0, 0, 0, 0.02);
-  background: rgb(255, 255, 255);
+  background: var(--token-84P6btZVPbKf);
   border-radius: 5px;
   padding: 20px;
-  border: 1px solid rgb(240, 242, 245) /* plasmic-token: L89ExH6ks */;
+  border: 1px solid var(--token-L89ExH6ks);
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -71,7 +71,7 @@
   justify-content: center;
   width: 64px;
   height: 64px;
-  background: rgb(23, 99, 207);
+  background: var(--token-XwpJY1cPVQ2);
   flex-shrink: 0;
 }
 .svg___41B7L {
@@ -110,10 +110,10 @@
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .slotTargetDescription {
-  color: rgb(150, 153, 158) /* plasmic-token: jBhCqxBbh1U */;
+  color: var(--token-jBhCqxBbh1U);
   text-align: center;
 }
 .slotTargetDescriptionlong {
@@ -132,12 +132,11 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 1px 0px rgb(234, 234, 234)
-    /* plasmic-token: oviEzCCWrsKq */;
-  background: rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px 0px var(--token-oviEzCCWrsKq);
+  background: var(--token-84P6btZVPbKf);
   flex-shrink: 0;
   border-radius: 16px;
-  border: 1px solid rgb(234, 234, 234) /* plasmic-token: oviEzCCWrsKq */;
+  border: 1px solid var(--token-oviEzCCWrsKq);
 }
 .svg__dboMv {
   width: 16px;

@@ -21,6 +21,7 @@ import Section from "../../Section"; // plasmic-import: TeEenYh07CLQ/component
 import Button from "../../Button"; // plasmic-import: jRx1E81mYCIy/component
 import Footer from "../../Footer"; // plasmic-import: R265Q5ctgGy/component
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicAbout.module.css"; // plasmic-import: lKpLQt4I320/css
 import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: gwsBLKJU83VD/icon
@@ -52,6 +53,9 @@ function PlasmicAbout__RenderFunc(props) {
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_tokens,
+            plasmic_library_plasmic_color_type_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -91,7 +95,7 @@ function PlasmicAbout__RenderFunc(props) {
                 )}
               >
                 {
-                  "Can you read a credit report? Do you understand the criteria by which your score is calculated? \n\nCredit can be complicated, but it doesn't have to be.  Understanding credit fact from fiction can set you free from anxiety, stress, and help you achieve your goals.  VCCC has the tools, resources and experience to guide you through this incredibly important life skill and give you the confidence to meet the demands in the daily financial world. \n\nEngage with our team of experts in credit management,  or attend free credit workshops that will help you to build, repair and enhance your report. VCCC will give you the confidence and understanding of common struggles such as - illegal predatory lending practices, high interest payday loans, and other roadblocks and rights to financial freedom.\n\nOur professionals at VCCC have over 20 years of experience of helping people, like yourself, get back on track. "
+                  "Are you receiving all your benefits from your financial institution? Do you really understand the terms of your loans ? \n\nLending doesn't have to be complicated. Once you understand, you can separate facts from fiction and be free from anxiety and stress. It should be all about achieving your goals.  VCCC has the tools, resources and experience to guide you.  It is an important life skill to meet the demands of the daily financial world. Confidence is everything.\n\nWith our team of experts and a personal assessment, you can understand and enhance your finance experiences. VCCC will give you the confidence to avoid common threats like illegal predatory lending practices, high interest payday loans, and other roadblocks to financial freedom.\n\nOur professionals at VCCC have over 20 years of experience helping people navigate  the banking world."
                 }
               </div>
 

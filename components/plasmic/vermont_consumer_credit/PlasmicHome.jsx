@@ -25,6 +25,7 @@ import HomeCta from "../../HomeCta"; // plasmic-import: VxyCfCXPu8O/component
 import Footer from "../../Footer"; // plasmic-import: R265Q5ctgGy/component
 import { useScreenVariants as useScreenVariantskcIfFDxm3XN2 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: KCIfFDxm3xN2/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicHome.module.css"; // plasmic-import: OS9jnRN5y9p/css
 import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import: 1F_c2O9V7izs/icon
@@ -62,6 +63,9 @@ function PlasmicHome__RenderFunc(props) {
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_tokens,
+            plasmic_library_plasmic_color_type_css.plasmic_tokens,
             sty.root
           )}
         >

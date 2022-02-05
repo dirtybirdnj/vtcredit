@@ -32,7 +32,7 @@
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .text__i6Aft {
   font-size: 48px;

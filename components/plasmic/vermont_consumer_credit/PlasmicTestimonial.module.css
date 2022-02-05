@@ -33,7 +33,7 @@
   height: 64px;
   left: 52%;
   top: -40px;
-  color: rgb(24, 119, 242) /* plasmic-token: p-fCTrfjtL4 */;
+  color: var(--token-p-fCTrfjtL4);
   z-index: 1;
   flex-shrink: 0;
 }
@@ -45,7 +45,7 @@
   max-width: 768px;
   min-width: 0;
   padding: 80px 48px 32px;
-  border: 2px solid rgb(201, 204, 209) /* plasmic-token: GpcED8_AcIn */;
+  border: 2px solid var(--token-GpcED8_AcIn);
 }
 .freeBox__nyog2 > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -67,7 +67,7 @@
 }
 .text__cui86 {
   position: relative;
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
 }
 .freeBox__slIfF {
   flex-direction: column;
@@ -96,5 +96,5 @@
 }
 .text__tyTzg {
   position: relative;
-  color: rgb(101, 103, 107) /* plasmic-token: vaTuh5tFL3B */;
+  color: var(--token-vaTuh5tFL3B);
 }

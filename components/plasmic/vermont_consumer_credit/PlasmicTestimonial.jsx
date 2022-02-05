@@ -17,6 +17,7 @@ import {
 } from "@plasmicapp/react-web";
 import Avatar from "../../Avatar"; // plasmic-import: TFmTsDcivu2W/component
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicTestimonial.module.css"; // plasmic-import: UHonw5mKes0b/css
 import QuoteDashesIcon from "./icons/PlasmicIcon__QuoteDashes"; // plasmic-import: jl9a2ljkZbUL/icon
@@ -33,7 +34,14 @@ function PlasmicTestimonial__RenderFunc(props) {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_tokens,
+        plasmic_library_plasmic_color_type_css.plasmic_tokens,
+        sty.root
+      )}
     >
       <Avatar
         data-plasmic-name={"avatar"}

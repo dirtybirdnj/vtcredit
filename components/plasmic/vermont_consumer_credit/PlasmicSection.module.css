@@ -12,17 +12,21 @@
   padding: 32px;
 }
 .rootcolor_halfDark {
-  background: linear-gradient(0deg, rgb(5, 5, 5) 0%, rgb(5, 5, 5) 100%) left 0%
-    top 100% / 100% 50% no-repeat;
+  background: linear-gradient(
+      0deg,
+      var(--token-bp_CxDNOQi9) 0%,
+      var(--token-bp_CxDNOQi9) 100%
+    )
+    left 0% top 100% / 100% 50% no-repeat;
 }
 .rootcolor_dark {
-  background: rgb(24, 25, 26);
+  background: var(--token-dph1wZ7NjV9);
 }
 .content {
   flex-direction: column;
   width: 100%;
   height: auto;
-  max-width: 1104px /* plasmic-token: Jrg5TblqjqhJ */;
+  max-width: var(--token-Jrg5TblqjqhJ);
   display: flex;
   position: relative;
   min-width: 0;
@@ -61,7 +65,7 @@
 .slotTargetTitle {
   font-size: 42px;
   font-weight: 800;
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  color: var(--token-NEon4Y--Z);
   text-align: center;
 }
 .subtitleContainer {

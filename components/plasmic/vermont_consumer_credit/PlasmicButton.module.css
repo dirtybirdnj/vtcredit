@@ -46,14 +46,14 @@
   padding: 6px 12px;
 }
 .rootcolor_blue {
-  background: rgb(24, 119, 242);
+  background: var(--token-p-fCTrfjtL4);
 }
 .rootcolor_red {
   background: #e54d2e;
 }
 .rootcolor_outlineBlue {
   background: #ffffff00;
-  border: 1px solid rgb(24, 119, 242) /* plasmic-token: p-fCTrfjtL4 */;
+  border: 1px solid var(--token-p-fCTrfjtL4);
 }
 .rootcolor_outlineRed {
   background: #fff0ee00;
@@ -75,7 +75,7 @@
   background: #282826;
 }
 .rootcolor_clear:hover {
-  background: rgb(228, 230, 235);
+  background: var(--token-ECewHnPLa);
 }
 .rootcolor_blue:hover {
   background: #369eff;
@@ -101,7 +101,7 @@
   background: #2e2e2b;
 }
 .rootcolor_clear:active {
-  background: rgb(228, 230, 235);
+  background: var(--token-3dsm_UqzX);
 }
 .rootcolor_blue:active {
   background: #52a9ff;
@@ -152,13 +152,13 @@
   outline: none;
 }
 .slotTargetChildren {
-  color: rgb(255, 255, 255) /* plasmic-token: 84P6btZVPbKf */;
+  color: var(--token-84P6btZVPbKf);
   font-weight: 400;
   font-size: 16px;
   white-space: pre;
 }
 .slotTargetChildrencolor_clear {
-  color: #666666 /* plasmic-token: btwIxFafpquw */;
+  color: var(--token-btwIxFafpquw);
 }
 .slotTargetChildrencolor_blue {
   color: #ffffff;
