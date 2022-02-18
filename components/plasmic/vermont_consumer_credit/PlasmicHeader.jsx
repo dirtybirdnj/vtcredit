@@ -73,7 +73,7 @@ function PlasmicHeader__RenderFunc(props) {
         data-plasmic-override={overrides.text}
         className={classNames(projectcss.all, projectcss.__wab_text, sty.text)}
       >
-        {"Vermont Consumer Consulting"}
+        {"Vermont Consumer  Credit Consulting"}
       </div>
 
       <p.Stack
