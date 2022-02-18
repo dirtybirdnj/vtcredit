@@ -246,7 +246,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__rheLc
                         )}
                       >
-                        {"Emergency Finance Triage"}
+                        {"Finance Triage Consulting"}
                       </div>
 
                       <div

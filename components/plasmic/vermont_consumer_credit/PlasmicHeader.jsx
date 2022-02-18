@@ -98,7 +98,7 @@ function PlasmicHeader__RenderFunc(props) {
           link={"/about"}
           size={"compact"}
         >
-          {"About"}
+          {"About VTCCC"}
         </Button>
 
         <Button

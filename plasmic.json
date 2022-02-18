@@ -31,7 +31,9 @@
       "icons": [],
       "images": [],
       "indirect": true,
-      "codeComponents": []
+      "codeComponents": [],
+      "globalContextsFilePath": "",
+      "jsBundleThemes": []
     },
     {
       "projectId": "9W67x2Pynxr9eDxjdLuGCS",
@@ -422,7 +424,8 @@
         }
       ],
       "indirect": false,
-      "codeComponents": []
+      "codeComponents": [],
+      "globalContextsFilePath": ""
     }
   ],
   "globalVariants": {
@@ -438,6 +441,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.169",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.169/dist/plasmic.schema.json"
+  "cliVersion": "0.1.170",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.170/dist/plasmic.schema.json"
 }

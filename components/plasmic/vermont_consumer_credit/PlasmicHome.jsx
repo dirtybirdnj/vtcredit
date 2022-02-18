@@ -125,7 +125,7 @@ function PlasmicHome__RenderFunc(props) {
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Our approach to credit counseling puts the client first and paves the way \nto long-lasting financial stability and success. \n\n🌴 This only shows up on mobile 🌴"
-                    : "Our approach to financial consumer counseling puts the client first \nand paves the way to sustainable financial behavior"}
+                    : "Our approach to financial consumer consulting puts the client first \nand paves the way to sustainable financial behavior"}
                 </div>
               </p.Stack>
 
