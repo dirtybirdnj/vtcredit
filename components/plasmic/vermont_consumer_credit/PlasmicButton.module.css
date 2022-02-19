@@ -29,6 +29,9 @@
 .rootcolor_clear {
   background: #23232000;
 }
+.rootcolor_green {
+  background: #009500;
+}
 .rootshowEndIcon {
   padding-right: 16px;
 }

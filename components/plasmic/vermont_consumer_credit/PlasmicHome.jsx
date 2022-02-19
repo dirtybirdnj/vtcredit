@@ -99,7 +99,7 @@ function PlasmicHome__RenderFunc(props) {
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Fix your credit"
+                      ? "Become a better"
                       : "Become a better"}
                   </div>
 
@@ -111,7 +111,7 @@ function PlasmicHome__RenderFunc(props) {
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
-                      ? "the right way"
+                      ? "financial products consumer"
                       : "financial products consumer"}
                   </div>
                 </div>
@@ -136,7 +136,7 @@ function PlasmicHome__RenderFunc(props) {
               >
                 <Button
                   className={classNames("__wab_instance", sty.button__diSdz)}
-                  color={"blue"}
+                  color={"green"}
                   endIcon={
                     <RightArrowIcon
                       data-plasmic-name={"svg"}

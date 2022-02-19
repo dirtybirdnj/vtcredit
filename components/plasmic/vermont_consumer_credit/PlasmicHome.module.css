@@ -195,12 +195,8 @@
   text-align: center;
   line-height: 1;
   color: rgba(51, 140, 245, 0);
-  background: linear-gradient(
-      90deg,
-      rgb(51, 140, 245) 0%,
-      rgb(79, 209, 197) 100%
-    )
-    0% 0% / 100% 100% padding-box /* clip: text **/;
+  background: linear-gradient(90deg, #054600 0%, #00d72e 100%) 0% 0% / 100% 100%
+    padding-box /* clip: text **/;
   padding-bottom: 12px;
   background-clip: text;
   -webkit-background-clip: text;

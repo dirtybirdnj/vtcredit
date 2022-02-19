@@ -68,20 +68,46 @@ function PlasmicHeader__RenderFunc(props) {
         ) : null}
       </p.PlasmicLink>
 
-      <div
-        data-plasmic-name={"text"}
-        data-plasmic-override={overrides.text}
-        className={classNames(projectcss.all, projectcss.__wab_text, sty.text)}
-      >
-        {"Vermont Consumer Credit Consulting"}
+      <div className={classNames(projectcss.all, sty.freeBox__epH)}>
+        <p.PlasmicImg
+          data-plasmic-name={"img"}
+          data-plasmic-override={overrides.img}
+          alt={""}
+          className={classNames(sty.img)}
+          displayHeight={"auto"}
+          displayMaxHeight={"none"}
+          displayMaxWidth={"none"}
+          displayMinHeight={"0"}
+          displayMinWidth={"0"}
+          displayWidth={
+            hasVariant(globalVariants, "screen", "mobile") ? "217px" : "300px"
+          }
+          loading={"lazy"}
+          src={{
+            src: "/plasmic/vermont_consumer_credit/images/vcccMatLogo.svg",
+            fullWidth: 300,
+            fullHeight: 109,
+            aspectRatio: 2.75
+          }}
+        />
+
+        <div
+          data-plasmic-name={"text"}
+          data-plasmic-override={overrides.text}
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.text
+          )}
+        >
+          {"Vermont Consumer Credit Consulting"}
+        </div>
       </div>
 
       <p.Stack
         as={"div"}
-        data-plasmic-name={"freeBox"}
-        data-plasmic-override={overrides.freeBox}
         hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox)}
+        className={classNames(projectcss.all, sty.freeBox__rvsHw)}
       >
         <Button
           className={classNames("__wab_instance", sty.button__n2Hbo)}
@@ -129,10 +155,10 @@ function PlasmicHeader__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "text", "freeBox"],
+  root: ["root", "link", "img", "text"],
   link: ["link"],
-  text: ["text"],
-  freeBox: ["freeBox"]
+  img: ["img"],
+  text: ["text"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -165,8 +191,8 @@ export const PlasmicHeader = Object.assign(
   {
     // Helper components rendering sub-elements
     link: makeNodeComponent("link"),
+    img: makeNodeComponent("img"),
     text: makeNodeComponent("text"),
-    freeBox: makeNodeComponent("freeBox"),
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
     internalArgProps: PlasmicHeader__ArgProps

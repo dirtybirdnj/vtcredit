@@ -421,6 +421,11 @@
           "id": "jhiYEadXl",
           "name": "paperwork-2",
           "filePath": "../public/plasmic/vermont_consumer_credit/images/paperwork2.jpeg"
+        },
+        {
+          "id": "9WME3nfXq",
+          "name": "vccc-mat-logo",
+          "filePath": "../public/plasmic/vermont_consumer_credit/images/vcccMatLogo.svg"
         }
       ],
       "indirect": false,
