@@ -25,7 +25,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicContact.module.css"; // plasmic-import: JEcFJJ7eQKF/css
-import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: gwsBLKJU83VD/icon
 
 export const PlasmicContact__VariantProps = new Array();
 
@@ -88,16 +87,6 @@ function PlasmicContact__RenderFunc(props) {
                 {"Contact Us"}
               </div>
 
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__xLmKa
-                )}
-              >
-                {"Contact Form Goes Here"}
-              </div>
-
               <ConsumerContactForm
                 data-plasmic-name={"consumerContactForm"}
                 data-plasmic-override={overrides.consumerContactForm}
@@ -114,7 +103,9 @@ function PlasmicContact__RenderFunc(props) {
                   className={classNames(projectcss.all, sty.freeBox___4ROfq)}
                 >
                   <Button
-                    className={classNames("__wab_instance", sty.button__ynzS3)}
+                    data-plasmic-name={"button"}
+                    data-plasmic-override={overrides.button}
+                    className={classNames("__wab_instance", sty.button)}
                     color={"green"}
                     link={"/request-consultation"}
                     showEndIcon={true}
@@ -127,29 +118,6 @@ function PlasmicContact__RenderFunc(props) {
                       )}
                     >
                       {"Make an Appointment Today"}
-                    </div>
-                  </Button>
-
-                  <Button
-                    className={classNames("__wab_instance", sty.button__cpA69)}
-                    endIcon={
-                      <SearchsvgIcon
-                        data-plasmic-name={"svg"}
-                        data-plasmic-override={overrides.svg}
-                        className={classNames(projectcss.all, sty.svg)}
-                        role={"img"}
-                      />
-                    }
-                    showEndIcon={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__uY81
-                      )}
-                    >
-                      {"Request More Information"}
                     </div>
                   </Button>
                 </p.Stack>
@@ -169,11 +137,19 @@ function PlasmicContact__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "section", "consumerContactForm", "svg", "footer"],
+  root: [
+    "root",
+    "header",
+    "section",
+    "consumerContactForm",
+    "button",
+    "footer"
+  ],
+
   header: ["header"],
-  section: ["section", "consumerContactForm", "svg"],
+  section: ["section", "consumerContactForm", "button"],
   consumerContactForm: ["consumerContactForm"],
-  svg: ["svg"],
+  button: ["button"],
   footer: ["footer"]
 };
 
@@ -209,7 +185,7 @@ export const PlasmicContact = Object.assign(
     header: makeNodeComponent("header"),
     section: makeNodeComponent("section"),
     consumerContactForm: makeNodeComponent("consumerContactForm"),
-    svg: makeNodeComponent("svg"),
+    button: makeNodeComponent("button"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicContact
     internalVariantProps: PlasmicContact__VariantProps,
