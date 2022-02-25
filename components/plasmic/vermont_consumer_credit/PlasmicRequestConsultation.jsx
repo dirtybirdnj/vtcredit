@@ -97,7 +97,7 @@ function PlasmicRequestConsultation__RenderFunc(props) {
                 )}
               >
                 {
-                  'Are you ready to take things to the next level? We are excited to assist you in the process of regaining control over your financial challenges.\n\nContact us to schedule an appointment, once that\'s done you can click the "Request Appointment" button below to make a payment.\n\nOnce we receive your payment we will confirm your appointment via email or telephone.\n\nIf you make a payment before you contact us to schedule a date we cannot guarantee you will be able to get your desired date or time. Please contact us to schedule a date and we will provide you a code you can use to take $20 off the initial consultation price.'
+                  'Are you ready to take things to the next level? We are excited to assist you in the process of regaining control over your financial challenges.\n\nContact us to schedule an appointment, once that\'s done you can click the "Request Appointment" button below to make a payment.\n\nOnce we receive your payment we will confirm your appointment via email or telephone.\n\nIf you make a payment before you contact us to schedule a date we cannot guarantee you will be able to get your desired date or time. \n\nPlease contact us to schedule a date and we will work with you to find a date and time to meet and review your financial information.'
                 }
               </div>
 
@@ -108,17 +108,7 @@ function PlasmicRequestConsultation__RenderFunc(props) {
                   sty.text__tTn8G
                 )}
               >
-                {"Initial 60 Minute Consultation"}
-              </div>
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__hm7U
-                )}
-              >
-                {"$125.00"}
+                {"Initial 45 Minute Consultation"}
               </div>
 
               <div
