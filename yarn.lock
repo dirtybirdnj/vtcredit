@@ -480,10 +480,10 @@
   resolved "https://registry.yarnpkg.com/@plasmicapp/preamble/-/preamble-0.0.35.tgz#a8df97a1bd35d3f8c2a331be954b8ffedc8ea654"
   integrity sha512-xpGuqBTx38vEVELmE+GsK5aWxCrxUXQJvgQLN/x8wVxX2ZsAYgQ6yDywy9kry9dRDNIN8Xm77dkILx2Df+H/ww==
 
-"@plasmicapp/react-web@^0.2.90":
-  version "0.2.90"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/react-web/-/react-web-0.2.90.tgz#5bb410ce91ab0f47b8c770f082ba0f60c29078ee"
-  integrity sha512-dFnslQ4tpvTl8qS+yab7SYIYBN+hE95PIjEJdRkagNnAIzFNFPeqzX9Nv5qFiDxJ6CBn/Po1InbkIMXqg88Wjw==
+"@plasmicapp/react-web@^0.2.91":
+  version "0.2.91"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/react-web/-/react-web-0.2.91.tgz#ac0c86c4cb3da2e0fc9da11fc08570113c7ac4fc"
+  integrity sha512-VEl3Q0TM/YumG8KhDF7W8/mWjj+GTtIAJLPS/FcCNbBnqnat94/iJtblQazsTF/Q7j82v2CPf4vXk5wnwo1pCA==
   dependencies:
     classnames "^2.2.6"
     react-aria "^3.7.0"
