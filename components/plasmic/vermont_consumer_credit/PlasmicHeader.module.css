@@ -42,6 +42,9 @@
     padding: 0px;
   }
 }
+.link {
+  display: flex;
+}
 .freeBox__epH {
   display: flex;
   flex-direction: column;

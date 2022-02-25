@@ -9,6 +9,7 @@
 // Plasmic Project: 9W67x2Pynxr9eDxjdLuGCS
 // Component: mCxPr8fs96V
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
   hasVariant,
@@ -55,39 +56,48 @@ function PlasmicHeader__RenderFunc(props) {
           data-plasmic-override={overrides.logoStack}
           className={classNames(projectcss.all, sty.logoStack)}
         >
-          <div className={classNames(projectcss.all, sty.freeBox__epH)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__swJ7)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"none"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={
-                hasVariant(globalVariants, "screen", "mobile")
-                  ? "217px"
-                  : "300px"
-              }
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/vermont_consumer_credit/images/vcccMatLogo.svg",
-                fullWidth: 300,
-                fullHeight: 109,
-                aspectRatio: 2.75
-              }}
-            />
+          <p.PlasmicLink
+            data-plasmic-name={"link"}
+            data-plasmic-override={overrides.link}
+            className={classNames(projectcss.all, projectcss.a, sty.link)}
+            component={Link}
+            href={"/"}
+            platform={"nextjs"}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__epH)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__swJ7)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobile")
+                    ? "217px"
+                    : "300px"
+                }
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/vermont_consumer_credit/images/vcccMatLogo.svg",
+                  fullWidth: 300,
+                  fullHeight: 109,
+                  aspectRatio: 2.75
+                }}
+              />
 
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__aGoFa
-              )}
-            >
-              {"Vermont Consumer Credit Consulting"}
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__aGoFa
+                )}
+              >
+                {"Vermont Consumer Credit Consulting"}
+              </div>
             </div>
-          </div>
+          </p.PlasmicLink>
         </div>
       ) : null}
       {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
@@ -253,8 +263,9 @@ function PlasmicHeader__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "logoStack"],
-  logoStack: ["logoStack"]
+  root: ["root", "logoStack", "link"],
+  logoStack: ["logoStack", "link"],
+  link: ["link"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -287,6 +298,7 @@ export const PlasmicHeader = Object.assign(
   {
     // Helper components rendering sub-elements
     logoStack: makeNodeComponent("logoStack"),
+    link: makeNodeComponent("link"),
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
     internalArgProps: PlasmicHeader__ArgProps
