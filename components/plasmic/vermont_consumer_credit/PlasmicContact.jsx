@@ -18,6 +18,7 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: mCxPr8fs96V/component
 import Section from "../../Section"; // plasmic-import: TeEenYh07CLQ/component
+import ConsumerContactForm from "../../ConsumerContactForm"; // plasmic-import: YBYj9hO4ND/component
 import Button from "../../Button"; // plasmic-import: jRx1E81mYCIy/component
 import Footer from "../../Footer"; // plasmic-import: R265Q5ctgGy/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -97,6 +98,15 @@ function PlasmicContact__RenderFunc(props) {
                 {"Contact Form Goes Here"}
               </div>
 
+              <ConsumerContactForm
+                data-plasmic-name={"consumerContactForm"}
+                data-plasmic-override={overrides.consumerContactForm}
+                className={classNames(
+                  "__wab_instance",
+                  sty.consumerContactForm
+                )}
+              />
+
               {true ? (
                 <p.Stack
                   as={"div"}
@@ -159,9 +169,10 @@ function PlasmicContact__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "section", "svg", "footer"],
+  root: ["root", "header", "section", "consumerContactForm", "svg", "footer"],
   header: ["header"],
-  section: ["section", "svg"],
+  section: ["section", "consumerContactForm", "svg"],
+  consumerContactForm: ["consumerContactForm"],
   svg: ["svg"],
   footer: ["footer"]
 };
@@ -197,6 +208,7 @@ export const PlasmicContact = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     section: makeNodeComponent("section"),
+    consumerContactForm: makeNodeComponent("consumerContactForm"),
     svg: makeNodeComponent("svg"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicContact
