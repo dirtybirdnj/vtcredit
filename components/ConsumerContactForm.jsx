@@ -18,7 +18,10 @@ function ConsumerContactForm_(props, ref) {
   //
   // By default, we are just piping all ConsumerContactFormProps here, but feel free
   // to do whatever works for you.
-  return <PlasmicConsumerContactForm root={{ ref }} {...props} />;
+  //return <PlasmicConsumerContactForm root={{ ref }} {...props} />;
+  return <PlasmicConsumerContactForm>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpNEsXa1bGEMLtDDRDRxGkZotW_XdRUChk2pk4zmUKXJrSeQ/viewform?embedded=true" width="640" height="1564" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </PlasmicConsumerContactForm>
 }
 
 const ConsumerContactForm = React.forwardRef(ConsumerContactForm_);
