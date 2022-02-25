@@ -110,7 +110,7 @@
 .freeBox__my4Cx > :global(.__wab_flex-container) {
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-width: 0;
   margin-left: calc(0px - 15px);
   width: calc(100% + 15px);
@@ -134,7 +134,6 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  padding: 8px;
 }
 .button__jc6ET:global(.__wab_instance) {
   max-width: 100%;
@@ -160,6 +159,9 @@
   height: auto;
   max-width: 800px;
   text-align: center;
+  font-weight: 300;
+  font-size: 13px;
+  margin-top: 7px;
   min-width: 0;
 }
 .button__aivM:global(.__wab_instance) {
@@ -175,11 +177,24 @@
 .text__ilMe2 {
   font-size: 24px;
 }
-.svg {
+.svg__keLs {
   position: relative;
   object-fit: cover;
   width: 24px;
   height: 24px;
+}
+.link {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+}
+.svg__peWb {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: 40px;
+  min-width: 0;
 }
 .text__tZw29 {
   position: relative;

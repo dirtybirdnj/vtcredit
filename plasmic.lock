@@ -353,39 +353,44 @@
           "checksum": "2e7778bc97f3a62fa9a9605074fb2b34"
         },
         {
+          "type": "renderModule",
+          "assetId": "IplCmomLYQN",
+          "checksum": "a2ceb7e5e93e9cd549e0a15225a2d2ad"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "IplCmomLYQN",
+          "checksum": "a2ceb7e5e93e9cd549e0a15225a2d2ad"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "JEcFJJ7eQKF",
+          "checksum": "382c87eb9dc680622668a3f9dbe6cc07"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "JEcFJJ7eQKF",
+          "checksum": "382c87eb9dc680622668a3f9dbe6cc07"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "YW1R0xm0jCL",
+          "checksum": "efa4bb1939b2ebce738218f30ba8ec97"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "YW1R0xm0jCL",
+          "checksum": "efa4bb1939b2ebce738218f30ba8ec97"
+        },
+        {
           "assetId": "9W67x2Pynxr9eDxjdLuGCS",
           "type": "projectCss",
-          "checksum": "9d9270c7f390a1496e105477a5e6c095"
+          "checksum": "003c40d50e38ceceae4e40b43bc99a83"
         },
         {
-          "type": "renderModule",
-          "assetId": "IplCmomLYQN",
-          "checksum": "ed0ad0ad8ed6957486d174d48b70a23c"
-        },
-        {
-          "type": "cssRules",
-          "assetId": "IplCmomLYQN",
-          "checksum": "ed0ad0ad8ed6957486d174d48b70a23c"
-        },
-        {
-          "type": "renderModule",
-          "assetId": "JEcFJJ7eQKF",
-          "checksum": "382c87eb9dc680622668a3f9dbe6cc07"
-        },
-        {
-          "type": "cssRules",
-          "assetId": "JEcFJJ7eQKF",
-          "checksum": "382c87eb9dc680622668a3f9dbe6cc07"
-        },
-        {
-          "type": "renderModule",
-          "assetId": "YW1R0xm0jCL",
-          "checksum": "efa4bb1939b2ebce738218f30ba8ec97"
-        },
-        {
-          "type": "cssRules",
-          "assetId": "YW1R0xm0jCL",
-          "checksum": "efa4bb1939b2ebce738218f30ba8ec97"
+          "type": "icon",
+          "assetId": "JyjhYJngx",
+          "checksum": "b5684405ebfcd08f565d93fc3ab9482e"
         }
       ],
       "codegenVersion": "0.0.1"

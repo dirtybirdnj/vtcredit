@@ -428,6 +428,11 @@
           "id": "gwsBLKJU83VD",
           "name": "SearchsvgIcon",
           "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__Searchsvg.jsx"
+        },
+        {
+          "id": "JyjhYJngx",
+          "name": "PoweredByStripeBlurplesvgIcon",
+          "moduleFilePath": "plasmic/vermont_consumer_credit/icons/PlasmicIcon__PoweredByStripeBlurplesvg.jsx"
         }
       ],
       "images": [

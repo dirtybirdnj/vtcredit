@@ -10,6 +10,7 @@
 // Component: IplCmomLYQN
 import * as React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
   classNames,
@@ -25,6 +26,7 @@ import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_typ
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicRequestConsultation.module.css"; // plasmic-import: IplCmomLYQN/css
 import CycleIcon from "./icons/PlasmicIcon__Cycle"; // plasmic-import: F1nfD4e8NqAk/icon
+import PoweredByStripeBlurplesvgIcon from "./icons/PlasmicIcon__PoweredByStripeBlurplesvg"; // plasmic-import: JyjhYJngx/icon
 
 export const PlasmicRequestConsultation__VariantProps = new Array();
 
@@ -168,7 +170,9 @@ function PlasmicRequestConsultation__RenderFunc(props) {
                           sty.text__f7Zip
                         )}
                       >
-                        {"https://buy.stripe.com/fZeaIwd2706Ybvy8ww"}
+                        {
+                          "Clicking this button will open a different site \nwith our secure payment processing page."
+                        }
                       </div>
                     </div>
                   ) : null}
@@ -177,12 +181,11 @@ function PlasmicRequestConsultation__RenderFunc(props) {
                     className={classNames("__wab_instance", sty.button__aivM)}
                     endIcon={
                       <CycleIcon
-                        data-plasmic-name={"svg"}
-                        data-plasmic-override={overrides.svg}
-                        className={classNames(projectcss.all, sty.svg)}
+                        className={classNames(projectcss.all, sty.svg__keLs)}
                         role={"img"}
                       />
                     }
+                    link={"/contact"}
                   >
                     <div
                       className={classNames(
@@ -196,6 +199,21 @@ function PlasmicRequestConsultation__RenderFunc(props) {
                   </Button>
                 </p.Stack>
               ) : null}
+
+              <p.PlasmicLink
+                data-plasmic-name={"link"}
+                data-plasmic-override={overrides.link}
+                className={classNames(projectcss.all, projectcss.a, sty.link)}
+                component={Link}
+                href={"https://stripe.com/"}
+                platform={"nextjs"}
+                target={"_blank"}
+              >
+                <PoweredByStripeBlurplesvgIcon
+                  className={classNames(projectcss.all, sty.svg__peWb)}
+                  role={"img"}
+                />
+              </p.PlasmicLink>
 
               <div
                 className={classNames(
@@ -221,10 +239,10 @@ function PlasmicRequestConsultation__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "section", "svg", "footer"],
+  root: ["root", "header", "section", "link", "footer"],
   header: ["header"],
-  section: ["section", "svg"],
-  svg: ["svg"],
+  section: ["section", "link"],
+  link: ["link"],
   footer: ["footer"]
 };
 
@@ -259,7 +277,7 @@ export const PlasmicRequestConsultation = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     section: makeNodeComponent("section"),
-    svg: makeNodeComponent("svg"),
+    link: makeNodeComponent("link"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicRequestConsultation
     internalVariantProps: PlasmicRequestConsultation__VariantProps,
