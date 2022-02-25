@@ -316,6 +316,19 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicPrivacyPolicy.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "YBYj9hO4ND",
+          "name": "ConsumerContactForm",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicConsumerContactForm.jsx",
+          "importSpec": {
+            "modulePath": "ConsumerContactForm.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicConsumerContactForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
