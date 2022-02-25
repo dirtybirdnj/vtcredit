@@ -176,7 +176,7 @@
 .text___3O6Em {
   height: auto;
 }
-.freeBox {
+.freeBox__foUiQ {
   flex-direction: column;
   position: relative;
   width: 100%;
@@ -185,7 +185,7 @@
   min-width: 0;
   display: none;
 }
-.freeBox > :global(.__wab_flex-container) {
+.freeBox__foUiQ > :global(.__wab_flex-container) {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
@@ -193,10 +193,10 @@
   margin-top: calc(0px - 24px);
   height: calc(100% + 24px);
 }
-.freeBox > :global(.__wab_flex-container) > *,
-.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.freeBox > :global(.__wab_flex-container) > picture > img,
-.freeBox
+.freeBox__foUiQ > :global(.__wab_flex-container) > *,
+.freeBox__foUiQ > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__foUiQ > :global(.__wab_flex-container) > picture > img,
+.freeBox__foUiQ
   > :global(.__wab_flex-container)
   > :global(.__wab_slot)
   > picture
@@ -211,6 +211,72 @@
   font-size: 40px;
   font-weight: 700;
   min-width: 0;
+}
+.freeBox__d9NQl {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  align-self: center;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__d9NQl > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 15px);
+  width: calc(100% + 15px);
+}
+.freeBox__d9NQl > :global(.__wab_flex-container) > *,
+.freeBox__d9NQl > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__d9NQl > :global(.__wab_flex-container) > picture > img,
+.freeBox__d9NQl
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 15px;
+}
+.button___5JdvJ:global(.__wab_instance) {
+  max-width: 100%;
+}
+.svg__bCa0 {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.text__h281X {
+  font-size: 24px;
+}
+.svg___9RRxP {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.button__lVhRh:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__v1Qfo {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.text__hgtpr {
+  font-size: 24px;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
 }
 .footer:global(.__wab_instance) {
   position: relative;

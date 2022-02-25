@@ -137,6 +137,7 @@
 .link__xjgJ {
   color: var(--token-btwIxFafpquw);
   font-size: 14px;
+  display: none;
 }
 .root .link__xjgJ:hover {
   text-decoration-line: underline;
@@ -146,6 +147,7 @@
   position: relative;
   font-size: 14px;
   color: var(--token-btwIxFafpquw);
+  display: none;
 }
 .link__dnXm {
   position: relative;
@@ -362,6 +364,14 @@
   font-size: 14px;
 }
 .root .link__eB5G:hover {
+  color: var(--token-NEon4Y--Z);
+}
+.link___1M7V {
+  position: relative;
+  color: var(--token-btwIxFafpquw);
+  font-size: 14px;
+}
+.root .link___1M7V:hover {
   color: var(--token-NEon4Y--Z);
 }
 .freeBox___9BVlP {

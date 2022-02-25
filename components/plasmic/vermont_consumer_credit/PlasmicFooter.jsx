@@ -80,29 +80,32 @@ function PlasmicFooter__RenderFunc(props) {
           ) : null}
 
           <div className={classNames(projectcss.all, sty.freeBox__cz9Q)}>
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__xjgJ
-              )}
-              component={Link}
-              href={"#"}
-              platform={"nextjs"}
-            >
-              {"Terms"}
-            </p.PlasmicLink>
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__dGp5
-              )}
-            >
-              {" · "}
-            </div>
+            {true ? (
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__xjgJ
+                )}
+                component={Link}
+                href={"#"}
+                platform={"nextjs"}
+              >
+                {"Terms"}
+              </p.PlasmicLink>
+            ) : null}
+            {true ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__dGp5
+                )}
+              >
+                {" · "}
+              </div>
+            ) : null}
 
             <p.PlasmicLink
               className={classNames(
@@ -112,10 +115,10 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.link__dnXm
               )}
               component={Link}
-              href={"#"}
+              href={"/privacy-policy"}
               platform={"nextjs"}
             >
-              {"Privacy"}
+              {"Privacy Policy"}
             </p.PlasmicLink>
           </div>
         </p.Stack>
@@ -264,7 +267,7 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.link__xnc0L
               )}
               component={Link}
-              href={"#"}
+              href={"/"}
               platform={"nextjs"}
             >
               {"Home"}
@@ -278,7 +281,7 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.link__bHQz
               )}
               component={Link}
-              href={"#"}
+              href={"/about"}
               platform={"nextjs"}
             >
               {"About us"}
@@ -292,7 +295,21 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.link__eB5G
               )}
               component={Link}
-              href={"#"}
+              href={"/request-consultation"}
+              platform={"nextjs"}
+            >
+              {"Request Appointment"}
+            </p.PlasmicLink>
+
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link___1M7V
+              )}
+              component={Link}
+              href={"/contact"}
               platform={"nextjs"}
             >
               {"Contact"}
@@ -337,6 +354,7 @@ function PlasmicFooter__RenderFunc(props) {
             component={Link}
             href={"https://www.vtapi.co"}
             platform={"nextjs"}
+            target={"_blank"}
           >
             {"vtapi.co"}
           </p.PlasmicLink>

@@ -41,6 +41,15 @@
 }
 .topSection:global(.__wab_instance) {
   position: relative;
+  margin-top: calc(-71px + 64px) !important;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .topSection:global(.__wab_instance) {
+    margin-top: calc(-79px + 64px) !important;
+  }
 }
 .freeBox__pO4Au {
   flex-direction: column;

@@ -106,6 +106,7 @@ function PlasmicHomeCta__RenderFunc(props) {
                 role={"img"}
               />
             }
+            link={"/request-consultation"}
             showEndIcon={true}
           >
             {"Request a Consultation"}

@@ -19,11 +19,13 @@ import {
 import Header from "../../Header"; // plasmic-import: mCxPr8fs96V/component
 import Section from "../../Section"; // plasmic-import: TeEenYh07CLQ/component
 import Faq from "../../Faq"; // plasmic-import: uvD0OplvXorD/component
+import Button from "../../Button"; // plasmic-import: jRx1E81mYCIy/component
 import Footer from "../../Footer"; // plasmic-import: R265Q5ctgGy/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicServices.module.css"; // plasmic-import: 6sPp355nJZ-s/css
+import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: gwsBLKJU83VD/icon
 
 export const PlasmicServices__VariantProps = new Array();
 
@@ -355,10 +357,8 @@ function PlasmicServices__RenderFunc(props) {
             {true ? (
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"freeBox"}
-                data-plasmic-override={overrides.freeBox}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox)}
+                className={classNames(projectcss.all, sty.freeBox__foUiQ)}
               >
                 <div
                   className={classNames(
@@ -373,6 +373,53 @@ function PlasmicServices__RenderFunc(props) {
             ) : null}
           </Section>
 
+          {true ? (
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__d9NQl)}
+            >
+              <Button
+                className={classNames("__wab_instance", sty.button___5JdvJ)}
+                color={"green"}
+                showEndIcon={true}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__h281X
+                  )}
+                >
+                  {"Make an Appointment Today"}
+                </div>
+              </Button>
+
+              <Button
+                className={classNames("__wab_instance", sty.button__lVhRh)}
+                endIcon={
+                  <SearchsvgIcon
+                    data-plasmic-name={"svg"}
+                    data-plasmic-override={overrides.svg}
+                    className={classNames(projectcss.all, sty.svg)}
+                    role={"img"}
+                  />
+                }
+                showEndIcon={true}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__hgtpr
+                  )}
+                >
+                  {"Request More Information"}
+                </div>
+              </Button>
+            </p.Stack>
+          ) : null}
+
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -385,11 +432,11 @@ function PlasmicServices__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "faqSection", "columns", "freeBox", "footer"],
+  root: ["root", "header", "faqSection", "columns", "svg", "footer"],
   header: ["header"],
-  faqSection: ["faqSection", "columns", "freeBox"],
+  faqSection: ["faqSection", "columns"],
   columns: ["columns"],
-  freeBox: ["freeBox"],
+  svg: ["svg"],
   footer: ["footer"]
 };
 
@@ -425,7 +472,7 @@ export const PlasmicServices = Object.assign(
     header: makeNodeComponent("header"),
     faqSection: makeNodeComponent("faqSection"),
     columns: makeNodeComponent("columns"),
-    freeBox: makeNodeComponent("freeBox"),
+    svg: makeNodeComponent("svg"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicServices
     internalVariantProps: PlasmicServices__VariantProps,

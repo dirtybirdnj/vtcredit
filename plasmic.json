@@ -277,6 +277,45 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicAbout.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "IplCmomLYQN",
+          "name": "RequestConsultation",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicRequestConsultation.jsx",
+          "importSpec": {
+            "modulePath": "../pages/request-consultation.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicRequestConsultation.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "JEcFJJ7eQKF",
+          "name": "Contact",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicContact.jsx",
+          "importSpec": {
+            "modulePath": "../pages/contact.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicContact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "YW1R0xm0jCL",
+          "name": "PrivacyPolicy",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicPrivacyPolicy.jsx",
+          "importSpec": {
+            "modulePath": "../pages/privacy-policy.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicPrivacyPolicy.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
