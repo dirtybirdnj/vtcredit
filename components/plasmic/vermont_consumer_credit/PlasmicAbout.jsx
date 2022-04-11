@@ -9,7 +9,6 @@
 // Plasmic Project: 9W67x2Pynxr9eDxjdLuGCS
 // Component: lKpLQt4I320
 import * as React from "react";
-import Head from "next/head";
 import * as p from "@plasmicapp/react-web";
 import {
   classNames,
@@ -34,10 +33,6 @@ function PlasmicAbout__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
   return (
     <React.Fragment>
-      <Head>
-        <meta name="twitter:card" content="summary" />
-      </Head>
-
       <style>{`
         body {
           margin: 0;
@@ -54,6 +49,7 @@ function PlasmicAbout__RenderFunc(props) {
             projectcss.all,
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_library_plasmic_color_type_css.plasmic_tokens,
             sty.root

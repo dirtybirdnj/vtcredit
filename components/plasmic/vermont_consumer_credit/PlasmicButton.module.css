@@ -62,13 +62,13 @@
   background: #fff0ee00;
   border: 1px solid #ca3214;
 }
-.rootshape_rounded_showStartIcon {
+.rootshowStartIcon_shape_rounded {
   padding-left: 16px;
 }
-.rootsize_compact_showStartIcon {
+.rootshowStartIcon_size_compact {
   padding-left: 8px;
 }
-.rootshowEndIcon_shape_rounded {
+.rootshape_rounded_showEndIcon {
   padding-right: 16px;
 }
 .rootsize_compact_showEndIcon {

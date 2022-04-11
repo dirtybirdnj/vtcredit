@@ -14,11 +14,9 @@ import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import IconLink from "../../IconLink"; // plasmic-import: EjLZdJRjcnq/component
-import { useScreenVariants as useScreenVariantskcIfFDxm3XN2 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: KCIfFDxm3xN2/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
@@ -34,10 +32,6 @@ export const PlasmicFooter__ArgProps = new Array();
 
 function PlasmicFooter__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantskcIfFDxm3XN2()
-  });
-
   return (
     <p.Stack
       as={"div"}
@@ -50,6 +44,7 @@ function PlasmicFooter__RenderFunc(props) {
         projectcss.all,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         plasmic_library_plasmic_color_type_css.plasmic_tokens,
         sty.root

@@ -9,7 +9,6 @@
 // Plasmic Project: 9W67x2Pynxr9eDxjdLuGCS
 // Component: 6sPp355nJZ-s
 import * as React from "react";
-import Head from "next/head";
 import * as p from "@plasmicapp/react-web";
 import {
   classNames,
@@ -35,10 +34,6 @@ function PlasmicServices__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
   return (
     <React.Fragment>
-      <Head>
-        <meta name="twitter:card" content="summary" />
-      </Head>
-
       <style>{`
         body {
           margin: 0;
@@ -55,6 +50,7 @@ function PlasmicServices__RenderFunc(props) {
             projectcss.all,
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_library_plasmic_color_type_css.plasmic_tokens,
             sty.root
@@ -109,7 +105,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3Zwqv
                         )}
                       >
-                        {"Consumer Lending Education"}
+                        {"Consumer Lending"}
                       </div>
 
                       <div
@@ -119,17 +115,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__zE7Sg
                         )}
                       >
-                        {"Post Bankruptcy Consumer Development"}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___3O6Em
-                        )}
-                      >
-                        {"Life Changing Events and Finance"}
+                        {"Consumer Development"}
                       </div>
                     </React.Fragment>
                   }
@@ -141,7 +127,7 @@ function PlasmicServices__RenderFunc(props) {
                       sty.text___8Uzwp
                     )}
                   >
-                    {"Loan Workshops"}
+                    {"Pre-qualificaiton Consultation"}
                   </div>
                 </Faq>
 
@@ -203,7 +189,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__zE7Sg
                         )}
                       >
-                        {"Realtor Consultation"}
+                        {"Realtor Evaluation"}
                       </div>
 
                       <div
@@ -213,7 +199,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3O6Em
                         )}
                       >
-                        {"Lender Consultation"}
+                        {"Lender Considerations"}
                       </div>
                     </React.Fragment>
                   }
@@ -248,7 +234,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__rheLc
                         )}
                       >
-                        {"Finance Triage Consulting"}
+                        {"Finance Triage"}
                       </div>
 
                       <div
@@ -258,7 +244,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__zE7Sg
                         )}
                       >
-                        {"Financial Hardship Consulting"}
+                        {"Financial Hardship"}
                       </div>
 
                       <div
@@ -268,7 +254,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3O6Em
                         )}
                       >
-                        {"Professional Partnership Collaboration"}
+                        {"Professional Partnership"}
                       </div>
                     </React.Fragment>
                   }
@@ -287,7 +273,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___5J5J1
                         )}
                       >
-                        {"Employer Provided Benefit"}
+                        {"Employer Benefit"}
                       </div>
 
                       <div
@@ -297,7 +283,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__zE7Sg
                         )}
                       >
-                        {"Consumer  Finance / Budgeting Education"}
+                        {"Consumer  Finance / Budgeting"}
                       </div>
                     </React.Fragment>
                   }
@@ -316,7 +302,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___9SRZ
                         )}
                       >
-                        {"Customer Referral Service (Loan Mitigation)"}
+                        {"Customer Referral Service"}
                       </div>
 
                       <div
@@ -326,7 +312,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__zE7Sg
                         )}
                       >
-                        {"Business Based Benefits for Consumer"}
+                        {"Business Based Benefits"}
                       </div>
 
                       <div
@@ -336,7 +322,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3O6Em
                         )}
                       >
-                        {"Reduction in Lending Denials"}
+                        {"Lending Denials"}
                       </div>
                     </React.Fragment>
                   }
