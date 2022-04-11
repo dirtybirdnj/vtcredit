@@ -142,7 +142,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__wgHa2
                         )}
                       >
-                        {"Debt Management Strategies"}
+                        {"Debt Management"}
                       </div>
 
                       <div
