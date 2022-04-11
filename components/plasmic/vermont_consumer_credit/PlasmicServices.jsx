@@ -152,7 +152,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3O6Em
                         )}
                       >
-                        {"Hardship Management and Planning"}
+                        {"Hardship Planning"}
                       </div>
                     </React.Fragment>
                   }
