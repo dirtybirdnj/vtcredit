@@ -74,16 +74,6 @@ function PlasmicLenderAgreement__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__gLyRs)}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__hbWap
-                )}
-              >
-                {"Lender Agreement"}
-              </div>
-
               <LenderAgreementForm
                 data-plasmic-name={"lenderAgreementForm"}
                 data-plasmic-override={overrides.lenderAgreementForm}
@@ -108,10 +98,12 @@ function PlasmicLenderAgreement__RenderFunc(props) {
                     showEndIcon={true}
                   >
                     <div
+                      data-plasmic-name={"text"}
+                      data-plasmic-override={overrides.text}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__rmsA1
+                        sty.text
                       )}
                     >
                       {"Make an Appointment Today"}
@@ -140,13 +132,15 @@ const PlasmicDescendants = {
     "section",
     "lenderAgreementForm",
     "button",
+    "text",
     "footer"
   ],
 
   header: ["header"],
-  section: ["section", "lenderAgreementForm", "button"],
+  section: ["section", "lenderAgreementForm", "button", "text"],
   lenderAgreementForm: ["lenderAgreementForm"],
-  button: ["button"],
+  button: ["button", "text"],
+  text: ["text"],
   footer: ["footer"]
 };
 
@@ -183,6 +177,7 @@ export const PlasmicLenderAgreement = Object.assign(
     section: makeNodeComponent("section"),
     lenderAgreementForm: makeNodeComponent("lenderAgreementForm"),
     button: makeNodeComponent("button"),
+    text: makeNodeComponent("text"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicLenderAgreement
     internalVariantProps: PlasmicLenderAgreement__VariantProps,

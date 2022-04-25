@@ -85,16 +85,6 @@ function PlasmicSubmitTestimonial__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__c368Y)}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__l6W6U
-                )}
-              >
-                {"Submit a Testimonial"}
-              </div>
-
               <TestimonialForm
                 data-plasmic-name={"testimonialForm"}
                 data-plasmic-override={overrides.testimonialForm}
@@ -116,10 +106,12 @@ function PlasmicSubmitTestimonial__RenderFunc(props) {
                     showEndIcon={true}
                   >
                     <div
+                      data-plasmic-name={"text"}
+                      data-plasmic-override={overrides.text}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__vKIzK
+                        sty.text
                       )}
                     >
                       {"Make an Appointment Today"}
@@ -142,11 +134,21 @@ function PlasmicSubmitTestimonial__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "section", "testimonialForm", "button", "footer"],
+  root: [
+    "root",
+    "header",
+    "section",
+    "testimonialForm",
+    "button",
+    "text",
+    "footer"
+  ],
+
   header: ["header"],
-  section: ["section", "testimonialForm", "button"],
+  section: ["section", "testimonialForm", "button", "text"],
   testimonialForm: ["testimonialForm"],
-  button: ["button"],
+  button: ["button", "text"],
+  text: ["text"],
   footer: ["footer"]
 };
 
@@ -183,6 +185,7 @@ export const PlasmicSubmitTestimonial = Object.assign(
     section: makeNodeComponent("section"),
     testimonialForm: makeNodeComponent("testimonialForm"),
     button: makeNodeComponent("button"),
+    text: makeNodeComponent("text"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicSubmitTestimonial
     internalVariantProps: PlasmicSubmitTestimonial__VariantProps,

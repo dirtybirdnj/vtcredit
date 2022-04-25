@@ -74,16 +74,6 @@ function PlasmicContact__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__uYRut)}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___08G03
-                )}
-              >
-                {"Contact Us"}
-              </div>
-
               <ConsumerContactForm
                 data-plasmic-name={"consumerContactForm"}
                 data-plasmic-override={overrides.consumerContactForm}
@@ -108,10 +98,12 @@ function PlasmicContact__RenderFunc(props) {
                     showEndIcon={true}
                   >
                     <div
+                      data-plasmic-name={"text"}
+                      data-plasmic-override={overrides.text}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__ukgel
+                        sty.text
                       )}
                     >
                       {"Make an Appointment Today"}
@@ -140,13 +132,15 @@ const PlasmicDescendants = {
     "section",
     "consumerContactForm",
     "button",
+    "text",
     "footer"
   ],
 
   header: ["header"],
-  section: ["section", "consumerContactForm", "button"],
+  section: ["section", "consumerContactForm", "button", "text"],
   consumerContactForm: ["consumerContactForm"],
-  button: ["button"],
+  button: ["button", "text"],
+  text: ["text"],
   footer: ["footer"]
 };
 
@@ -183,6 +177,7 @@ export const PlasmicContact = Object.assign(
     section: makeNodeComponent("section"),
     consumerContactForm: makeNodeComponent("consumerContactForm"),
     button: makeNodeComponent("button"),
+    text: makeNodeComponent("text"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicContact
     internalVariantProps: PlasmicContact__VariantProps,
