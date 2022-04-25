@@ -26,6 +26,7 @@ export const PlasmicIconLink__ArgProps = new Array("icon");
 
 function PlasmicIconLink__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <div
       data-plasmic-name={"root"}

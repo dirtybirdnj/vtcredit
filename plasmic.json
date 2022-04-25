@@ -329,6 +329,58 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicConsumerContactForm.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "UOd5qPp-4o",
+          "name": "LenderAgreement",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicLenderAgreement.jsx",
+          "importSpec": {
+            "modulePath": "../pages/lender-agreement.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicLenderAgreement.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "JV46E8AzoY",
+          "name": "Testimonials",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicTestimonials.jsx",
+          "importSpec": {
+            "modulePath": "../pages/testimonials.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicTestimonials.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "HkaU6j4gbuD",
+          "name": "Sales",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicSales.jsx",
+          "importSpec": {
+            "modulePath": "../pages/sales.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSales.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "5ToL9_mxd2X",
+          "name": "SubmitTestimonial",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicSubmitTestimonial.jsx",
+          "importSpec": {
+            "modulePath": "../pages/submit-testimonial.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSubmitTestimonial.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -504,6 +556,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.176",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.176/dist/plasmic.schema.json"
+  "cliVersion": "0.1.178",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.178/dist/plasmic.schema.json"
 }

@@ -26,6 +26,7 @@ export const PlasmicAvatar__ArgProps = new Array("pic");
 
 function PlasmicAvatar__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <div
       data-plasmic-name={"root"}

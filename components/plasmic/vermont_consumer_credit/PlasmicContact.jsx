@@ -31,6 +31,7 @@ export const PlasmicContact__ArgProps = new Array();
 
 function PlasmicContact__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <React.Fragment>
       <style>{`

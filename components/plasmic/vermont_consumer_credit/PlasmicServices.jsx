@@ -9,6 +9,7 @@
 // Plasmic Project: 9W67x2Pynxr9eDxjdLuGCS
 // Component: 6sPp355nJZ-s
 import * as React from "react";
+import Head from "next/head";
 import * as p from "@plasmicapp/react-web";
 import {
   classNames,
@@ -32,8 +33,15 @@ export const PlasmicServices__ArgProps = new Array();
 
 function PlasmicServices__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <React.Fragment>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{"Services"}</title>
+        <meta key="og:title" property="og:title" content={"Services"} />
+      </Head>
+
       <style>{`
         body {
           margin: 0;

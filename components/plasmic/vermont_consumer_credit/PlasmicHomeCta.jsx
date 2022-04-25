@@ -32,6 +32,7 @@ export const PlasmicHomeCta__ArgProps = new Array();
 
 function PlasmicHomeCta__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantskcIfFDxm3XN2()
   });

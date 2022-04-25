@@ -27,6 +27,7 @@ export const PlasmicBaseCard__ArgProps = new Array("children", "iconBack");
 
 function PlasmicBaseCard__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <p.Stack
       as={"div"}
