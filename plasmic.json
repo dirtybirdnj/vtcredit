@@ -368,8 +368,6 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSales.module.css",
           "scheme": "blackbox",
           "componentType": "page"
-<<<<<<< HEAD
-=======
         },
         {
           "id": "5ToL9_mxd2X",
@@ -383,7 +381,6 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSubmitTestimonial.module.css",
           "scheme": "blackbox",
           "componentType": "page"
->>>>>>> 3c13274a8fe5904b515e5b065f41f7c4e15d3d87
         }
       ],
       "icons": [
