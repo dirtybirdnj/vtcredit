@@ -18,6 +18,7 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: mCxPr8fs96V/component
 import Section from "../../Section"; // plasmic-import: TeEenYh07CLQ/component
+import TestimonialForm from "../../TestimonialForm"; // plasmic-import: 19fS4EkQpA/component
 import Button from "../../Button"; // plasmic-import: jRx1E81mYCIy/component
 import Footer from "../../Footer"; // plasmic-import: R265Q5ctgGy/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -94,15 +95,11 @@ function PlasmicSubmitTestimonial__RenderFunc(props) {
                 {"Submit a Testimonial"}
               </div>
 
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__vXyrn
-                )}
-              >
-                {"testimonial form goes here"}
-              </div>
+              <TestimonialForm
+                data-plasmic-name={"testimonialForm"}
+                data-plasmic-override={overrides.testimonialForm}
+                className={classNames("__wab_instance", sty.testimonialForm)}
+              />
 
               {true ? (
                 <p.Stack
@@ -145,9 +142,10 @@ function PlasmicSubmitTestimonial__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "section", "button", "footer"],
+  root: ["root", "header", "section", "testimonialForm", "button", "footer"],
   header: ["header"],
-  section: ["section", "button"],
+  section: ["section", "testimonialForm", "button"],
+  testimonialForm: ["testimonialForm"],
   button: ["button"],
   footer: ["footer"]
 };
@@ -183,6 +181,7 @@ export const PlasmicSubmitTestimonial = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     section: makeNodeComponent("section"),
+    testimonialForm: makeNodeComponent("testimonialForm"),
     button: makeNodeComponent("button"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicSubmitTestimonial

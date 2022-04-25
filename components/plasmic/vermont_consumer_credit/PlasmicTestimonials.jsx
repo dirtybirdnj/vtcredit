@@ -25,6 +25,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicTestimonials.module.css"; // plasmic-import: JV46E8AzoY/css
+import CycleIcon from "./icons/PlasmicIcon__Cycle"; // plasmic-import: F1nfD4e8NqAk/icon
 
 export const PlasmicTestimonials__VariantProps = new Array();
 
@@ -127,10 +128,8 @@ function PlasmicTestimonials__RenderFunc(props) {
                   className={classNames(projectcss.all, sty.freeBox__uF8Xj)}
                 >
                   <Button
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
-                    className={classNames("__wab_instance", sty.button)}
-                    color={"green"}
+                    className={classNames("__wab_instance", sty.button__gK8Ah)}
+                    color={"outlineBlue"}
                     link={"/request-consultation"}
                     showEndIcon={true}
                   >
@@ -142,6 +141,31 @@ function PlasmicTestimonials__RenderFunc(props) {
                       )}
                     >
                       {"Make an Appointment Today"}
+                    </div>
+                  </Button>
+
+                  <Button
+                    className={classNames("__wab_instance", sty.button__ietiQ)}
+                    color={"blue"}
+                    endIcon={
+                      <CycleIcon
+                        data-plasmic-name={"svg"}
+                        data-plasmic-override={overrides.svg}
+                        className={classNames(projectcss.all, sty.svg)}
+                        role={"img"}
+                      />
+                    }
+                    link={"/submit-testimonial"}
+                    showEndIcon={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__tVbu
+                      )}
+                    >
+                      {"Submit a Testimonial"}
                     </div>
                   </Button>
                 </p.Stack>
@@ -161,10 +185,10 @@ function PlasmicTestimonials__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "section", "button", "footer"],
+  root: ["root", "header", "section", "svg", "footer"],
   header: ["header"],
-  section: ["section", "button"],
-  button: ["button"],
+  section: ["section", "svg"],
+  svg: ["svg"],
   footer: ["footer"]
 };
 
@@ -199,7 +223,7 @@ export const PlasmicTestimonials = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     section: makeNodeComponent("section"),
-    button: makeNodeComponent("button"),
+    svg: makeNodeComponent("svg"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicTestimonials
     internalVariantProps: PlasmicTestimonials__VariantProps,

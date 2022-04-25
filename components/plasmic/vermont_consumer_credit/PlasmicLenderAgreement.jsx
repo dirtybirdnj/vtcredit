@@ -17,6 +17,7 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: mCxPr8fs96V/component
 import Section from "../../Section"; // plasmic-import: TeEenYh07CLQ/component
+import LenderAgreementForm from "../../LenderAgreementForm"; // plasmic-import: GnmRy4t8u2/component
 import Button from "../../Button"; // plasmic-import: jRx1E81mYCIy/component
 import Footer from "../../Footer"; // plasmic-import: R265Q5ctgGy/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -83,15 +84,14 @@ function PlasmicLenderAgreement__RenderFunc(props) {
                 {"Lender Agreement"}
               </div>
 
-              <div
+              <LenderAgreementForm
+                data-plasmic-name={"lenderAgreementForm"}
+                data-plasmic-override={overrides.lenderAgreementForm}
                 className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__x74Ns
+                  "__wab_instance",
+                  sty.lenderAgreementForm
                 )}
-              >
-                {"Lender Agreement Form Goes Here"}
-              </div>
+              />
 
               {true ? (
                 <p.Stack
@@ -134,9 +134,18 @@ function PlasmicLenderAgreement__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "section", "button", "footer"],
+  root: [
+    "root",
+    "header",
+    "section",
+    "lenderAgreementForm",
+    "button",
+    "footer"
+  ],
+
   header: ["header"],
-  section: ["section", "button"],
+  section: ["section", "lenderAgreementForm", "button"],
+  lenderAgreementForm: ["lenderAgreementForm"],
   button: ["button"],
   footer: ["footer"]
 };
@@ -172,6 +181,7 @@ export const PlasmicLenderAgreement = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     section: makeNodeComponent("section"),
+    lenderAgreementForm: makeNodeComponent("lenderAgreementForm"),
     button: makeNodeComponent("button"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicLenderAgreement

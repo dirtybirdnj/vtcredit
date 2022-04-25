@@ -86,6 +86,26 @@ function PlasmicFooter__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__y0HNl)}
             >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__pwyRy
+                )}
+              >
+                {"Vermont Consumer Credit Consulting"}
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__lfDCj
+                )}
+              >
+                {"PO Box 8156\nEssex Junction VT, 05451"}
+              </div>
+
               <p.PlasmicLink
                 className={classNames(
                   projectcss.all,
@@ -108,7 +128,7 @@ function PlasmicFooter__RenderFunc(props) {
                   sty.link__jyIl7
                 )}
                 component={Link}
-                href={"/privacy-policy"}
+                href={"/lender-agreement"}
                 platform={"nextjs"}
               >
                 {"Lender Agreement"}

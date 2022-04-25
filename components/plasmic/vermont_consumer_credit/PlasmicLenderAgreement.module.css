@@ -60,12 +60,9 @@
   font-size: 50px;
   min-width: 0;
 }
-.text__x74Ns {
+.lenderAgreementForm:global(.__wab_instance) {
+  max-width: 100%;
   position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  min-width: 0;
 }
 .freeBox___3HnOm {
   flex-direction: row;
