@@ -33,6 +33,7 @@ export const PlasmicPlan__ArgProps = new Array(
 
 function PlasmicPlan__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <BaseCard
       data-plasmic-name={"root"}

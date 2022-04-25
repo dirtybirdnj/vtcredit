@@ -15,12 +15,10 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import Avatar from "../../Avatar"; // plasmic-import: TFmTsDcivu2W/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_vermont_consumer_credit.module.css"; // plasmic-import: 9W67x2Pynxr9eDxjdLuGCS/projectcss
 import sty from "./PlasmicTestimonial.module.css"; // plasmic-import: UHonw5mKes0b/css
-import QuoteDashesIcon from "./icons/PlasmicIcon__QuoteDashes"; // plasmic-import: jl9a2ljkZbUL/icon
 
 export const PlasmicTestimonial__VariantProps = new Array();
 
@@ -28,6 +26,7 @@ export const PlasmicTestimonial__ArgProps = new Array();
 
 function PlasmicTestimonial__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -44,39 +43,6 @@ function PlasmicTestimonial__RenderFunc(props) {
         sty.root
       )}
     >
-      <Avatar
-        data-plasmic-name={"avatar"}
-        data-plasmic-override={overrides.avatar}
-        className={classNames("__wab_instance", sty.avatar)}
-        pic={
-          <p.PlasmicImg
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
-            alt={""}
-            className={classNames(sty.img)}
-            displayHeight={"100%"}
-            displayMaxHeight={"none"}
-            displayMaxWidth={"none"}
-            displayMinHeight={"0"}
-            displayMinWidth={"0"}
-            displayWidth={"100%"}
-            src={{
-              src: "/plasmic/vermont_consumer_credit/images/profilepic.png",
-              fullWidth: 192,
-              fullHeight: 192,
-              aspectRatio: undefined
-            }}
-          />
-        }
-      />
-
-      <QuoteDashesIcon
-        data-plasmic-name={"svg"}
-        data-plasmic-override={overrides.svg}
-        className={classNames(projectcss.all, sty.svg)}
-        role={"img"}
-      />
-
       <p.Stack
         as={"div"}
         hasGap={true}
@@ -125,10 +91,7 @@ function PlasmicTestimonial__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "avatar", "img", "svg"],
-  avatar: ["avatar", "img"],
-  img: ["img"],
-  svg: ["svg"]
+  root: ["root"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -160,9 +123,6 @@ export const PlasmicTestimonial = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    avatar: makeNodeComponent("avatar"),
-    img: makeNodeComponent("img"),
-    svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicTestimonial
     internalVariantProps: PlasmicTestimonial__VariantProps,
     internalArgProps: PlasmicTestimonial__ArgProps

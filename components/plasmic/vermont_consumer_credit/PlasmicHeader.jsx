@@ -31,6 +31,7 @@ export const PlasmicHeader__ArgProps = new Array();
 
 function PlasmicHeader__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantskcIfFDxm3XN2()
   });
@@ -194,6 +195,18 @@ function PlasmicHeader__RenderFunc(props) {
                           )}
                         >
                           {"About VCCC"}
+                        </div>
+                      </Button>
+
+                      <Button color={"clear"} link={"/sales"} size={"compact"}>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__vjkNi
+                          )}
+                        >
+                          {"Sales"}
                         </div>
                       </Button>
 

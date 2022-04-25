@@ -9,6 +9,7 @@
 // Plasmic Project: 9W67x2Pynxr9eDxjdLuGCS
 // Component: IplCmomLYQN
 import * as React from "react";
+import Head from "next/head";
 import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
@@ -33,8 +34,19 @@ export const PlasmicRequestConsultation__ArgProps = new Array();
 
 function PlasmicRequestConsultation__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <React.Fragment>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{"Request Consultation"}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={"Request Consultation"}
+        />
+      </Head>
+
       <style>{`
         body {
           margin: 0;
