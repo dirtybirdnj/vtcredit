@@ -18,7 +18,9 @@ function TestimonialForm_(props, ref) {
   //
   // By default, we are just piping all TestimonialFormProps here, but feel free
   // to do whatever works for you.
-  return <PlasmicTestimonialForm root={{ ref }} {...props} />;
+  return <PlasmicTestimonialForm>
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCrRjwjwK7rm4hkdkjJNsrP7VAFYc28kkfqs6bYYVHIy8e2Q/viewform?embedded=true" width="640" height="1328" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </PlasmicTestimonialForm>
 }
 
 const TestimonialForm = React.forwardRef(TestimonialForm_);

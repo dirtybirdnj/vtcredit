@@ -18,7 +18,9 @@ function LenderAgreementForm_(props, ref) {
   //
   // By default, we are just piping all LenderAgreementFormProps here, but feel free
   // to do whatever works for you.
-  return <PlasmicLenderAgreementForm root={{ ref }} {...props} />;
+  return <PlasmicLenderAgreementForm>
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd4WIdYKDNklkStmbf2Myee6W5aAo5opPGRbozWenicTzLT1A/viewform?embedded=true" width="640" height="2133" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </PlasmicLenderAgreementForm>
 }
 
 const LenderAgreementForm = React.forwardRef(LenderAgreementForm_);
