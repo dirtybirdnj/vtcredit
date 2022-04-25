@@ -381,6 +381,32 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSubmitTestimonial.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "GnmRy4t8u2",
+          "name": "LenderAgreementForm",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicLenderAgreementForm.jsx",
+          "importSpec": {
+            "modulePath": "LenderAgreementForm.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicLenderAgreementForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "19fS4EkQpA",
+          "name": "TestimonialForm",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicTestimonialForm.jsx",
+          "importSpec": {
+            "modulePath": "TestimonialForm.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicTestimonialForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
