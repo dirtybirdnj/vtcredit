@@ -22,7 +22,11 @@ import sty from "./PlasmicTestimonial.module.css"; // plasmic-import: UHonw5mKes
 
 export const PlasmicTestimonial__VariantProps = new Array();
 
-export const PlasmicTestimonial__ArgProps = new Array();
+export const PlasmicTestimonial__ArgProps = new Array(
+  "quote",
+  "tagline",
+  "person"
+);
 
 function PlasmicTestimonial__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
@@ -48,42 +52,29 @@ function PlasmicTestimonial__RenderFunc(props) {
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__nyog2)}
       >
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__cui86
-          )}
-        >
-          {
-            "“ I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time. “"
-          }
-        </div>
+        {p.renderPlasmicSlot({
+          defaultContents:
+            "“ I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time. “",
+          value: args.quote,
+          className: classNames(sty.slotTargetQuote)
+        })}
 
         <p.Stack
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__slIfF)}
         >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__vw3Mh
-            )}
-          >
-            {"Darya Finger"}
-          </div>
+          {p.renderPlasmicSlot({
+            defaultContents: "Darya Finger",
+            value: args.person,
+            className: classNames(sty.slotTargetPerson)
+          })}
 
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__tyTzg
-            )}
-          >
-            {"CEO & Co-Founder @Dropbox"}
-          </div>
+          {p.renderPlasmicSlot({
+            defaultContents: "CEO & Co-Founder @Dropbox",
+            value: args.tagline,
+            className: classNames(sty.slotTargetTagline)
+          })}
         </p.Stack>
       </p.Stack>
     </div>

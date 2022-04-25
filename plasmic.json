@@ -368,6 +368,22 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSales.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+<<<<<<< HEAD
+=======
+        },
+        {
+          "id": "5ToL9_mxd2X",
+          "name": "SubmitTestimonial",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicSubmitTestimonial.jsx",
+          "importSpec": {
+            "modulePath": "../pages/submit-testimonial.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSubmitTestimonial.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+>>>>>>> 3c13274a8fe5904b515e5b065f41f7c4e15d3d87
         }
       ],
       "icons": [
@@ -543,6 +559,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.176",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.176/dist/plasmic.schema.json"
+  "cliVersion": "0.1.178",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.178/dist/plasmic.schema.json"
 }
