@@ -198,7 +198,11 @@ function PlasmicHeader__RenderFunc(props) {
                         </div>
                       </Button>
 
-                      <Button color={"clear"} link={"/sales"} size={"compact"}>
+                      <Button
+                        color={"clear"}
+                        link={"/calendar"}
+                        size={"compact"}
+                      >
                         <div
                           className={classNames(
                             projectcss.all,

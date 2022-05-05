@@ -357,19 +357,6 @@
           "componentType": "page"
         },
         {
-          "id": "HkaU6j4gbuD",
-          "name": "Sales",
-          "type": "managed",
-          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
-          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicSales.jsx",
-          "importSpec": {
-            "modulePath": "../pages/sales.jsx"
-          },
-          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSales.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "5ToL9_mxd2X",
           "name": "SubmitTestimonial",
           "type": "managed",
@@ -405,6 +392,45 @@
             "modulePath": "TestimonialForm.jsx"
           },
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicTestimonialForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "HkaU6j4gbuD",
+          "name": "Calendar",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicCalendar.jsx",
+          "importSpec": {
+            "modulePath": "../pages/calendar.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicCalendar.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "JzpHFewkf_",
+          "name": "Sales2",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicSales2.jsx",
+          "importSpec": {
+            "modulePath": "../pages/sales-2.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSales2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "IkZLGa9TM-",
+          "name": "SquareCalander",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicSquareCalander.jsx",
+          "importSpec": {
+            "modulePath": "SquareCalander.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSquareCalander.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
