@@ -433,6 +433,19 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicSquareCalander.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "D-IxSyo2D5I",
+          "name": "RequestConsultationPayment",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicRequestConsultationPayment.jsx",
+          "importSpec": {
+            "modulePath": "../pages/stripe.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicRequestConsultationPayment.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

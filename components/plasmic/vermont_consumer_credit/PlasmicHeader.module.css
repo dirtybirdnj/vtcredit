@@ -259,6 +259,21 @@
   width: 24px;
   height: 24px;
 }
+.svg__qkKGm {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.text__kIoM {
+  font-size: 22px;
+}
+.svg__lIlAs {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
 .svg__ibAwr {
   position: relative;
   object-fit: cover;
@@ -273,6 +288,9 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
+}
+.button__axwV7:global(.__wab_instance) {
+  display: none;
 }
 .svg__cx4Jx {
   position: relative;

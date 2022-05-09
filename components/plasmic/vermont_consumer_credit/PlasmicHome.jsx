@@ -142,7 +142,7 @@ function PlasmicHome__RenderFunc(props) {
                       role={"img"}
                     />
                   }
-                  link={"/request-consultation"}
+                  link={"/contact"}
                   showEndIcon={true}
                 >
                   <div
@@ -152,7 +152,7 @@ function PlasmicHome__RenderFunc(props) {
                       sty.text__ionqj
                     )}
                   >
-                    {"Request a Consultation"}
+                    {"Request Information"}
                   </div>
                 </Button>
 

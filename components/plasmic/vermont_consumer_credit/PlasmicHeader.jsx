@@ -170,6 +170,18 @@ function PlasmicHeader__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__qo3K)}
                     >
+                      <Button color={"clear"} link={"/"} size={"compact"}>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__xcyV6
+                          )}
+                        >
+                          {"Home"}
+                        </div>
+                      </Button>
+
                       <Button
                         color={"clear"}
                         link={"/services"}
@@ -179,7 +191,7 @@ function PlasmicHeader__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__xcyV6
+                            sty.text__kIoM
                           )}
                         >
                           {"Services"}
@@ -198,21 +210,27 @@ function PlasmicHeader__RenderFunc(props) {
                         </div>
                       </Button>
 
-                      <Button
-                        color={"clear"}
-                        link={"/calendar"}
-                        size={"compact"}
-                      >
-                        <div
+                      {true ? (
+                        <Button
                           className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__vjkNi
+                            "__wab_instance",
+                            sty.button__axwV7
                           )}
+                          color={"clear"}
+                          link={"/calendar"}
+                          size={"compact"}
                         >
-                          {"Sales"}
-                        </div>
-                      </Button>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__vjkNi
+                            )}
+                          >
+                            {"Sales"}
+                          </div>
+                        </Button>
+                      ) : null}
 
                       <Button
                         color={"clear"}

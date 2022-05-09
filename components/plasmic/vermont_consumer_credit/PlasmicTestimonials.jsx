@@ -130,7 +130,7 @@ function PlasmicTestimonials__RenderFunc(props) {
                   <Button
                     className={classNames("__wab_instance", sty.button__gK8Ah)}
                     color={"outlineBlue"}
-                    link={"/request-consultation"}
+                    link={"/contact"}
                     showEndIcon={true}
                   >
                     <div
@@ -140,7 +140,7 @@ function PlasmicTestimonials__RenderFunc(props) {
                         sty.text__aAaTf
                       )}
                     >
-                      {"Make an Appointment Today"}
+                      {"Request Infomration Today"}
                     </div>
                   </Button>
 

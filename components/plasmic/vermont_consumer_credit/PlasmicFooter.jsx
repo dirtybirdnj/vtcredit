@@ -103,6 +103,16 @@ function PlasmicFooter__RenderFunc(props) {
                   sty.text__lfDCj
                 )}
               >
+                {"802-922-6268"}
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__r2E5Z
+                )}
+              >
                 {"PO Box 8156\nEssex Junction VT, 05451"}
               </div>
 
@@ -337,7 +347,7 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.link__eB5G
               )}
               component={Link}
-              href={"/request-consultation"}
+              href={"/contact"}
               platform={"nextjs"}
             >
               {"Request Appointment"}
