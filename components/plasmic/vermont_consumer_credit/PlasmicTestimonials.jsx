@@ -94,10 +94,23 @@ function PlasmicTestimonials__RenderFunc(props) {
 
               <Testimonial
                 className={classNames("__wab_instance", sty.testimonial__myxGt)}
+                person={"Ann Atkins"}
                 quote={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium leo at egestas molestie. In hac habitasse platea dictumst. Phasellus dolor sapien, auctor vitae libero ac, vulputate convallis nibh. "
+                  "I had the opportunity to work side by side with John while in a therapeutic case management positon teaching life skills.  Establishing and maintaining credit was a huge part of the work done.  John is amazing, he has the ability to meet people where they are at, establish a trusting relationship, and walk with them on their journey to establishing credit, rapport and permanent housing! "
                 }
-                tagline={"CEO & Co-Founder @ Dropbox"}
+                tagline={
+                  true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__udkxc
+                      )}
+                    >
+                      {"CEO & Co-Founder @ Dropbox"}
+                    </div>
+                  ) : null
+                }
               />
 
               <Testimonial
