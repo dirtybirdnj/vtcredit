@@ -30,9 +30,12 @@ export const PlasmicFeatureCard__ArgProps = new Array(
   "iconBack"
 );
 
+export const defaultFeatureCard__Args = {};
+
 function PlasmicFeatureCard__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultFeatureCard__Args, props.args);
+  const $props = args;
   return (
     <p.Stack
       as={"div"}

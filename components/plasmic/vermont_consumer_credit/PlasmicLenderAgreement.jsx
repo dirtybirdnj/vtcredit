@@ -29,9 +29,12 @@ export const PlasmicLenderAgreement__VariantProps = new Array();
 
 export const PlasmicLenderAgreement__ArgProps = new Array();
 
+export const defaultLenderAgreement__Args = {};
+
 function PlasmicLenderAgreement__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultLenderAgreement__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <style>{`

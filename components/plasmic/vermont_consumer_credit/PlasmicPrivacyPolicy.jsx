@@ -30,9 +30,12 @@ export const PlasmicPrivacyPolicy__VariantProps = new Array();
 
 export const PlasmicPrivacyPolicy__ArgProps = new Array();
 
+export const defaultPrivacyPolicy__Args = {};
+
 function PlasmicPrivacyPolicy__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultPrivacyPolicy__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>

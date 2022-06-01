@@ -29,9 +29,12 @@ export const PlasmicHeader__VariantProps = new Array();
 
 export const PlasmicHeader__ArgProps = new Array();
 
+export const defaultHeader__Args = {};
+
 function PlasmicHeader__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultHeader__Args, props.args);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantskcIfFDxm3XN2()
   });
@@ -272,7 +275,17 @@ function PlasmicHeader__RenderFunc(props) {
                         link={"/about"}
                         size={"compact"}
                       >
-                        {"About VCCC"}
+                        <div
+                          data-plasmic-name={"about"}
+                          data-plasmic-override={overrides.about}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.about
+                          )}
+                        >
+                          {"About VCCC"}
+                        </div>
                       </Button>
 
                       <Button
@@ -299,9 +312,10 @@ function PlasmicHeader__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "logoStack", "link"],
+  root: ["root", "logoStack", "link", "about"],
   logoStack: ["logoStack", "link"],
-  link: ["link"]
+  link: ["link"],
+  about: ["about"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -335,6 +349,7 @@ export const PlasmicHeader = Object.assign(
     // Helper components rendering sub-elements
     logoStack: makeNodeComponent("logoStack"),
     link: makeNodeComponent("link"),
+    about: makeNodeComponent("about"),
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
     internalArgProps: PlasmicHeader__ArgProps

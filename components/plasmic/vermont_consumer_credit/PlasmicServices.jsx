@@ -31,9 +31,12 @@ export const PlasmicServices__VariantProps = new Array();
 
 export const PlasmicServices__ArgProps = new Array();
 
+export const defaultServices__Args = {};
+
 function PlasmicServices__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultServices__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>

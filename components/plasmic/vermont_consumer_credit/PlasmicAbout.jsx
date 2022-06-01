@@ -29,9 +29,12 @@ export const PlasmicAbout__VariantProps = new Array();
 
 export const PlasmicAbout__ArgProps = new Array();
 
+export const defaultAbout__Args = {};
+
 function PlasmicAbout__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultAbout__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <style>{`

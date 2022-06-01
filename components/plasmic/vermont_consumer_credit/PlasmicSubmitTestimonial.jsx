@@ -30,9 +30,12 @@ export const PlasmicSubmitTestimonial__VariantProps = new Array();
 
 export const PlasmicSubmitTestimonial__ArgProps = new Array();
 
+export const defaultSubmitTestimonial__Args = {};
+
 function PlasmicSubmitTestimonial__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultSubmitTestimonial__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>

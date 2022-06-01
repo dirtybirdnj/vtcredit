@@ -10,7 +10,7 @@
   "dependencies": {
     "@plasmicapp/cli": "^0.1.178",
     "@plasmicapp/host": "^1.0.0",
-    "@plasmicapp/react-web": "^0.2.95",
+    "@plasmicapp/react-web": "^0.2.97",
     "next": "12.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2"

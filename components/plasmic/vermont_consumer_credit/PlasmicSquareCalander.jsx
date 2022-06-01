@@ -23,9 +23,12 @@ export const PlasmicSquareCalander__VariantProps = new Array();
 
 export const PlasmicSquareCalander__ArgProps = new Array();
 
+export const defaultSquareCalander__Args = {};
+
 function PlasmicSquareCalander__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultSquareCalander__Args, props.args);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}

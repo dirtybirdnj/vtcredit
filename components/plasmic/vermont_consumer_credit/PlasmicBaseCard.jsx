@@ -25,9 +25,12 @@ export const PlasmicBaseCard__VariantProps = new Array("long");
 
 export const PlasmicBaseCard__ArgProps = new Array("children", "iconBack");
 
+export const defaultBaseCard__Args = {};
+
 function PlasmicBaseCard__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultBaseCard__Args, props.args);
+  const $props = args;
   return (
     <p.Stack
       as={"div"}

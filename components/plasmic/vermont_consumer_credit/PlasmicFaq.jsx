@@ -24,9 +24,12 @@ export const PlasmicFaq__VariantProps = new Array();
 
 export const PlasmicFaq__ArgProps = new Array("children", "slot");
 
+export const defaultFaq__Args = {};
+
 function PlasmicFaq__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultFaq__Args, props.args);
+  const $props = args;
   return (
     <BaseCard
       data-plasmic-name={"root"}

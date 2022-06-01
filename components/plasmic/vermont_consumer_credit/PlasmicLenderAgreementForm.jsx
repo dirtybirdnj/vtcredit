@@ -23,9 +23,12 @@ export const PlasmicLenderAgreementForm__VariantProps = new Array();
 
 export const PlasmicLenderAgreementForm__ArgProps = new Array();
 
+export const defaultLenderAgreementForm__Args = {};
+
 function PlasmicLenderAgreementForm__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultLenderAgreementForm__Args, props.args);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}

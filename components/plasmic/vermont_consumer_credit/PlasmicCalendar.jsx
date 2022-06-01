@@ -30,9 +30,12 @@ export const PlasmicCalendar__VariantProps = new Array();
 
 export const PlasmicCalendar__ArgProps = new Array();
 
+export const defaultCalendar__Args = {};
+
 function PlasmicCalendar__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultCalendar__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>

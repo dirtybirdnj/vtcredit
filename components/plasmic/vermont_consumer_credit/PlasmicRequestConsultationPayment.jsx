@@ -32,9 +32,17 @@ export const PlasmicRequestConsultationPayment__VariantProps = new Array();
 
 export const PlasmicRequestConsultationPayment__ArgProps = new Array();
 
+export const defaultRequestConsultationPayment__Args = {};
+
 function PlasmicRequestConsultationPayment__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign(
+    {},
+    defaultRequestConsultationPayment__Args,
+    props.args
+  );
+
+  const $props = args;
   return (
     <React.Fragment>
       <Head>

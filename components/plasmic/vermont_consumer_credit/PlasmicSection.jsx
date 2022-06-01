@@ -33,9 +33,12 @@ export const PlasmicSection__ArgProps = new Array(
   "title"
 );
 
+export const defaultSection__Args = {};
+
 function PlasmicSection__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultSection__Args, props.args);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}

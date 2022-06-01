@@ -29,9 +29,12 @@ export const PlasmicSales2__VariantProps = new Array();
 
 export const PlasmicSales2__ArgProps = new Array();
 
+export const defaultSales2__Args = {};
+
 function PlasmicSales2__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultSales2__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>

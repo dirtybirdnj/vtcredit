@@ -31,9 +31,12 @@ export const PlasmicTestimonials__VariantProps = new Array();
 
 export const PlasmicTestimonials__ArgProps = new Array();
 
+export const defaultTestimonials__Args = {};
+
 function PlasmicTestimonials__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultTestimonials__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>
@@ -115,11 +118,40 @@ function PlasmicTestimonials__RenderFunc(props) {
 
               <Testimonial
                 className={classNames("__wab_instance", sty.testimonial__tptt)}
-                person={"Second Person"}
+                person={"Timothy Carpenter"}
                 quote={
-                  "Nunc non risus sit amet quam maximus semper. Proin libero urna, mollis vel blandit eu, posuere vitae dolor. Ut nec mollis neque, sit amet convallis arcu. Pellentesque aliquam neque ut euismod finibus."
+                  "…I’ve worked with John and his clients multiple times. It’s always been a pleasure as John has his own banking and lending experience which makes it very easy to communicate what’s needed for the lenders standpoint. He’s shown a successful track record of negotiating bad debts."
                 }
-                tagline={"CFO @ SomethingElse"}
+                tagline={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___7M2Ol
+                    )}
+                  >
+                    {"Senior Lending Manager / OCU "}
+                  </div>
+                }
+              />
+
+              <Testimonial
+                className={classNames("__wab_instance", sty.testimonial__ejwyP)}
+                person={"Timothy Carpenter"}
+                quote={
+                  "…I’ve worked with John and his clients multiple times. It’s always been a pleasure as John has his own banking and lending experience which makes it very easy to communicate what’s needed for the lenders standpoint. He’s shown a successful track record of negotiating bad debts."
+                }
+                tagline={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__hqgD
+                    )}
+                  >
+                    {"Senior Lending Manager / OCU "}
+                  </div>
+                }
               />
 
               <Testimonial
@@ -127,11 +159,238 @@ function PlasmicTestimonials__RenderFunc(props) {
                   "__wab_instance",
                   sty.testimonial___4Gfj6
                 )}
-                person={"Some Otherguy"}
-                quote={
-                  "Etiam tempor varius lacus in fringilla. Nullam consequat odio purus, vel accumsan nisi sodales a. Aliquam arcu sapien, scelerisque scelerisque tortor eu, tristique facilisis ligula. Quisque tristique, risus at tincidunt iaculis, mauris nisi facilisis elit, scelerisque rutrum erat purus at metus. Quisque mauris orci, hendrerit sit amet mollis at, vulputate sit amet augue. Nam id mollis urna, ac hendrerit tortor. Donec ut lacus vitae dui condimentum hendrerit eu nec mi."
+                person={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gCve3
+                    )}
+                  >
+                    {"Anthony and Lee Bambara"}
+                  </div>
                 }
-                tagline={"Director of Finance @ ThirdThing"}
+                quote={
+                  "My wife and I were very intimidated at the prospect of buying a home. But John gave us the guidance to make the process simple. He explained what he was doing and the moves we were making, and never kept us in the dark. He answered our questions every step of the way, never made us feel ashamed for not being savvy to the world of lending, in fact he inspired confidence. His expertise made the process we were dreading so much a wholly painless experience. Cannot say enough kind things about the man, a well educated professional who I was happy to have in my corner!"
+                }
+                tagline={
+                  true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___2FvOj
+                      )}
+                    >
+                      {"Director of Finance @ ThirdThing"}
+                    </div>
+                  ) : null
+                }
+              />
+
+              <Testimonial
+                className={classNames("__wab_instance", sty.testimonial___6LbZ)}
+                person={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__lsDAp
+                    )}
+                  >
+                    {"Don Banks"}
+                  </div>
+                }
+                quote={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__x0UZo
+                    )}
+                  >
+                    {
+                      "I was looking to find out what my credit score was and John Goffe was instrumental in helping me. John couldn't even find me in the system, it's like i didn't exist. He took the time to understand who I was and where I had come from, with no judgemental passed. He explained to me what had to be done, got me started and I went back to him two months later to check in, to both of our surprise, i finally had a credit score, and it was amazing. For the first time I felt like existed and i was somebody. I wholeheartedly recommend John Goffe to everyone we know, if they need any type of consult. He's very genuine and honest."
+                    }
+                  </div>
+                }
+                tagline={
+                  true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__khk2D
+                      )}
+                    >
+                      {"Director of Finance @ ThirdThing"}
+                    </div>
+                  ) : null
+                }
+              />
+
+              <Testimonial
+                className={classNames("__wab_instance", sty.testimonial__xlZy7)}
+                person={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__mHd2Y
+                    )}
+                  >
+                    {"Trista Baker "}
+                  </div>
+                }
+                quote={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ltSmU
+                    )}
+                  >
+                    {
+                      "I went to  credit union and met with John Goffe, to go over my credit. I was looking to purchase a home, but knew my credit needed to be fixed. John sat down with me and went over everyrhing that appeared on my credit report. He took the time to explain what was good on there and what needed to be fixed. When he finished, he immediately went to work making phone calls and got the negative reports to settle for lower amounts. John also made the checks out and sent them to the appropriate people. He made fixing my credit stress free and helped me achieve one of my biggest goals, to be able to have great credit and purchase a home. John was an important part to help me understand about credit utilization, credit spending, maintaining and keeping a good credit score. I appreciated the time he took to help me and not make me feel like I was failure. He's sincere, genuine and honest and takes the time to explain things. I wouldn't be where I am today, if he didn't help me take that first step."
+                    }
+                  </div>
+                }
+                tagline={
+                  true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__wc9F9
+                      )}
+                    >
+                      {"Director of Finance @ ThirdThing"}
+                    </div>
+                  ) : null
+                }
+              />
+
+              <Testimonial
+                className={classNames("__wab_instance", sty.testimonial__isjLq)}
+                person={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__jNNo7
+                    )}
+                  >
+                    {"Linda Siple"}
+                  </div>
+                }
+                quote={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__foLhg
+                    )}
+                  >
+                    {
+                      '"I was in foreclosure when I first met John. My credit was poor and I was in a financial bind. After my husband and I worked with John we were able to pay off our mortgage, help rebuild our credit history, and now have a safe vehicle for us to get to our appointments. John was phenomenal at helping me understand my credit and how things work. He has really helped to instill alot of great knowledge on how to handle my finances and great budgeting tactics that I utilize daily. He has really helped me turn our financial future in a more positive direction and I am very grateful to be able to pass these habits onto my grandkids."'
+                    }
+                  </div>
+                }
+                tagline={
+                  true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__jdlMt
+                      )}
+                    >
+                      {"Director of Finance @ ThirdThing"}
+                    </div>
+                  ) : null
+                }
+              />
+
+              <Testimonial
+                className={classNames("__wab_instance", sty.testimonial__hSbmO)}
+                person={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__uvcgA
+                    )}
+                  >
+                    {"Tinika Lau "}
+                  </div>
+                }
+                quote={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ykmpj
+                    )}
+                  >
+                    {
+                      'I was a single mom with barely any credit. John was a great resource and a great help when I needed to buy my home. He taught me how to read a credit report, he walked me through the classes needed for the first time home buyers financing, and has been a fountain of knowledge that has helped me get to where I am today. I now own a house and have a new reliable vehicle that is safe for for family. I am also able to qualify for things I could not before due to my increased credit worthiness."'
+                    }
+                  </div>
+                }
+                tagline={
+                  true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___5MMqO
+                      )}
+                    >
+                      {"Director of Finance @ ThirdThing"}
+                    </div>
+                  ) : null
+                }
+              />
+
+              <Testimonial
+                className={classNames("__wab_instance", sty.testimonial__juCBc)}
+                person={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__tl2Oj
+                    )}
+                  >
+                    {"Krystal Shattuck"}
+                  </div>
+                }
+                quote={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___5Y3Em
+                    )}
+                  >
+                    {
+                      "Where do I begin. When I first met Jon he was working at Opportunities. I was set up with him because I had good credit but my income to debt ratio was terrible. I couldn't get a loan for a car or a mortgage for a house. Well I walked into his office and we hit it right off. He was very friendly, knowledgeable and funny. He made me feel like he cared and he does. He helped me get myself straightened out and now I am good to go."
+                    }
+                  </div>
+                }
+                tagline={
+                  true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__fibVf
+                      )}
+                    >
+                      {"Director of Finance @ ThirdThing"}
+                    </div>
+                  ) : null
+                }
               />
 
               {true ? (

@@ -23,9 +23,12 @@ export const PlasmicConsumerContactForm__VariantProps = new Array();
 
 export const PlasmicConsumerContactForm__ArgProps = new Array();
 
+export const defaultConsumerContactForm__Args = {};
+
 function PlasmicConsumerContactForm__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultConsumerContactForm__Args, props.args);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}

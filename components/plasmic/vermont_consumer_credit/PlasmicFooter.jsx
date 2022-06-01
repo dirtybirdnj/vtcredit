@@ -32,9 +32,12 @@ export const PlasmicFooter__VariantProps = new Array();
 
 export const PlasmicFooter__ArgProps = new Array();
 
+export const defaultFooter__Args = {};
+
 function PlasmicFooter__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultFooter__Args, props.args);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantskcIfFDxm3XN2()
   });

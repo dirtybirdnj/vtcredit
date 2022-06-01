@@ -28,9 +28,12 @@ export const PlasmicTestimonial__ArgProps = new Array(
   "person"
 );
 
+export const defaultTestimonial__Args = {};
+
 function PlasmicTestimonial__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultTestimonial__Args, props.args);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}

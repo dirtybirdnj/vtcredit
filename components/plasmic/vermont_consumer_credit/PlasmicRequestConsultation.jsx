@@ -32,9 +32,12 @@ export const PlasmicRequestConsultation__VariantProps = new Array();
 
 export const PlasmicRequestConsultation__ArgProps = new Array();
 
+export const defaultRequestConsultation__Args = {};
+
 function PlasmicRequestConsultation__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultRequestConsultation__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>

@@ -29,9 +29,12 @@ export const PlasmicContact__VariantProps = new Array();
 
 export const PlasmicContact__ArgProps = new Array();
 
+export const defaultContact__Args = {};
+
 function PlasmicContact__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultContact__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <style>{`

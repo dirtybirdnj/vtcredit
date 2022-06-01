@@ -25,9 +25,12 @@ export const PlasmicBullet__VariantProps = new Array();
 
 export const PlasmicBullet__ArgProps = new Array("children");
 
+export const defaultBullet__Args = {};
+
 function PlasmicBullet__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultBullet__Args, props.args);
+  const $props = args;
   return (
     <p.Stack
       as={"div"}
