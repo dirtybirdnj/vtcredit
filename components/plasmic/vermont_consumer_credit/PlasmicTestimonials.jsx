@@ -117,25 +117,6 @@ function PlasmicTestimonials__RenderFunc(props) {
               />
 
               <Testimonial
-                className={classNames("__wab_instance", sty.testimonial__tptt)}
-                person={"Timothy Carpenter"}
-                quote={
-                  "…I’ve worked with John and his clients multiple times. It’s always been a pleasure as John has his own banking and lending experience which makes it very easy to communicate what’s needed for the lenders standpoint. He’s shown a successful track record of negotiating bad debts."
-                }
-                tagline={
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___7M2Ol
-                    )}
-                  >
-                    {"Senior Lending Manager / OCU "}
-                  </div>
-                }
-              />
-
-              <Testimonial
                 className={classNames("__wab_instance", sty.testimonial__ejwyP)}
                 person={"Timothy Carpenter"}
                 quote={
