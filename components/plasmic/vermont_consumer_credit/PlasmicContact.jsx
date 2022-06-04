@@ -18,7 +18,6 @@ import {
 import Header from "../../Header"; // plasmic-import: mCxPr8fs96V/component
 import Section from "../../Section"; // plasmic-import: TeEenYh07CLQ/component
 import ConsumerContactForm from "../../ConsumerContactForm"; // plasmic-import: YBYj9hO4ND/component
-import Button from "../../Button"; // plasmic-import: jRx1E81mYCIy/component
 import Footer from "../../Footer"; // plasmic-import: R265Q5ctgGy/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
@@ -74,8 +73,10 @@ function PlasmicContact__RenderFunc(props) {
           >
             <p.Stack
               as={"div"}
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__uYRut)}
+              className={classNames(projectcss.all, sty.freeBox)}
             >
               <ConsumerContactForm
                 data-plasmic-name={"consumerContactForm"}
@@ -85,35 +86,6 @@ function PlasmicContact__RenderFunc(props) {
                   sty.consumerContactForm
                 )}
               />
-
-              {true ? (
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox___4ROfq)}
-                >
-                  <Button
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
-                    className={classNames("__wab_instance", sty.button)}
-                    color={"green"}
-                    link={"/request-consultation"}
-                    showEndIcon={true}
-                  >
-                    <div
-                      data-plasmic-name={"text"}
-                      data-plasmic-override={overrides.text}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text
-                      )}
-                    >
-                      {"Make an Appointment Today"}
-                    </div>
-                  </Button>
-                </p.Stack>
-              ) : null}
             </p.Stack>
           </Section>
 
@@ -133,17 +105,15 @@ const PlasmicDescendants = {
     "root",
     "header",
     "section",
+    "freeBox",
     "consumerContactForm",
-    "button",
-    "text",
     "footer"
   ],
 
   header: ["header"],
-  section: ["section", "consumerContactForm", "button", "text"],
+  section: ["section", "freeBox", "consumerContactForm"],
+  freeBox: ["freeBox", "consumerContactForm"],
   consumerContactForm: ["consumerContactForm"],
-  button: ["button", "text"],
-  text: ["text"],
   footer: ["footer"]
 };
 
@@ -178,9 +148,8 @@ export const PlasmicContact = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     section: makeNodeComponent("section"),
+    freeBox: makeNodeComponent("freeBox"),
     consumerContactForm: makeNodeComponent("consumerContactForm"),
-    button: makeNodeComponent("button"),
-    text: makeNodeComponent("text"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicContact
     internalVariantProps: PlasmicContact__VariantProps,

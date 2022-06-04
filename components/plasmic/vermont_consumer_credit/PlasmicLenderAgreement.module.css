@@ -55,13 +55,13 @@
 }
 .freeBox___3HnOm {
   flex-direction: row;
-  display: flex;
   position: relative;
   width: 100%;
   height: auto;
   max-width: 100%;
   align-self: center;
   min-width: 0;
+  display: none;
   padding: 8px;
 }
 .freeBox___3HnOm > :global(.__wab_flex-container) {
