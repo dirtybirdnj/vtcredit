@@ -138,7 +138,7 @@ function PlasmicServices__RenderFunc(props) {
                       sty.text___8Uzwp
                     )}
                   >
-                    {"Pre-qualificaiton Consultation"}
+                    {"Pre-qualificaiton"}
                   </div>
                 </Faq>
 
@@ -153,7 +153,7 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text__wgHa2
                         )}
                       >
-                        {"Debt Management"}
+                        {"Management"}
                       </div>
 
                       <div
@@ -187,20 +187,10 @@ function PlasmicServices__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__xm9Si
-                        )}
-                      >
-                        {"Consumer Finance Education"}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
                           sty.text__zE7Sg
                         )}
                       >
-                        {"Realtor Evaluation"}
+                        {"Loan Term Evaluations"}
                       </div>
 
                       <div
@@ -210,12 +200,20 @@ function PlasmicServices__RenderFunc(props) {
                           sty.text___3O6Em
                         )}
                       >
-                        {"Lender Considerations"}
+                        {"Local Lender Referrals"}
                       </div>
                     </React.Fragment>
                   }
                 >
-                  {"Home Ownership"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__l94Ln
+                    )}
+                  >
+                    {"Consumer Finance "}
+                  </div>
                 </Faq>
               </p.Stack>
 
@@ -257,16 +255,6 @@ function PlasmicServices__RenderFunc(props) {
                       >
                         {"Financial Hardship"}
                       </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___3O6Em
-                        )}
-                      >
-                        {"Professional Partnership"}
-                      </div>
                     </React.Fragment>
                   }
                 >
@@ -275,68 +263,22 @@ function PlasmicServices__RenderFunc(props) {
 
                 <Faq
                   className={classNames("__wab_instance", sty.faq__tbiyY)}
-                  slot={
-                    <React.Fragment>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___5J5J1
-                        )}
-                      >
-                        {"Employer Benefit"}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__zE7Sg
-                        )}
-                      >
-                        {"Consumer  Finance / Budgeting"}
-                      </div>
-                    </React.Fragment>
-                  }
+                  slot={"Consumer  Finance / Budgeting"}
                 >
-                  {"Employee Workshops"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__uv3Pt
+                    )}
+                  >
+                    {"Employer Benefit"}
+                  </div>
                 </Faq>
 
                 <Faq
                   className={classNames("__wab_instance", sty.faq___0CRa)}
-                  slot={
-                    <React.Fragment>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___9SRZ
-                        )}
-                      >
-                        {"Customer Referral Service"}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__zE7Sg
-                        )}
-                      >
-                        {"Business Based Benefits"}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___3O6Em
-                        )}
-                      >
-                        {"Lending Denials"}
-                      </div>
-                    </React.Fragment>
-                  }
+                  slot={null}
                 >
                   <div
                     className={classNames(
@@ -345,7 +287,7 @@ function PlasmicServices__RenderFunc(props) {
                       sty.text__mFNrb
                     )}
                   >
-                    {"Corporate Programs"}
+                    {"Lending Denials"}
                   </div>
                 </Faq>
               </p.Stack>

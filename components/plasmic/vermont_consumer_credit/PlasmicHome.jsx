@@ -111,8 +111,8 @@ function PlasmicHome__RenderFunc(props) {
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
-                      ? "financial products consumer"
-                      : "financial products consumer"}
+                      ? "financial  consumer"
+                      : "financial consumer"}
                   </div>
                 </div>
 
