@@ -106,7 +106,7 @@ function PlasmicFooter__RenderFunc(props) {
                   sty.text__lfDCj
                 )}
               >
-                {"802-922-6268"}
+                {"802-922-6269"}
               </div>
 
               <div
@@ -116,7 +116,19 @@ function PlasmicFooter__RenderFunc(props) {
                   sty.text__r2E5Z
                 )}
               >
-                {"PO Box 8156\nEssex Junction VT, 05451"}
+                {"Mailing Address:\nPO Box 8156\nEssex Junction VT, 05451"}
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__sw7P
+                )}
+              >
+                {
+                  "Office Location:\n145 Pine Haven Shores RD\nShelburne, VT 05482"
+                }
               </div>
 
               <p.PlasmicLink

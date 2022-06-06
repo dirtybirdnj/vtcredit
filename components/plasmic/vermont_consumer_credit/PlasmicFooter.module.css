@@ -183,6 +183,15 @@
   margin-bottom: 20px;
   min-width: 0;
 }
+.text__sw7P {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  min-width: 0;
+}
 .link__dnXm {
   position: relative;
   color: var(--token-btwIxFafpquw);
