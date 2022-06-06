@@ -113,22 +113,44 @@ function PlasmicFooter__RenderFunc(props) {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__r2E5Z
+                  sty.text__sw7P
                 )}
               >
-                {"Mailing Address:\nPO Box 8156\nEssex Junction VT, 05451"}
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"Office Location:"}
+                  </span>
+                  <React.Fragment>
+                    {
+                      "\n145 Pine Haven Shores RD\nSuite 2212\nShelburne, VT 05482"
+                    }
+                  </React.Fragment>
+                </React.Fragment>
               </div>
 
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__sw7P
+                  sty.text__r2E5Z
                 )}
               >
-                {
-                  "Office Location:\n145 Pine Haven Shores RD\nShelburne, VT 05482"
-                }
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"Mailing Address:"}
+                  </span>
+                  <React.Fragment>
+                    {"\nPO Box 8156\nEssex Junction VT, 05451"}
+                  </React.Fragment>
+                </React.Fragment>
               </div>
 
               <p.PlasmicLink
@@ -362,8 +384,11 @@ function PlasmicFooter__RenderFunc(props) {
                 sty.link__eB5G
               )}
               component={Link}
-              href={"/contact"}
+              href={
+                "https://squareup.com/appointments/book/yvgq1psw8la7ua/LRZGPNNYCTN1M/start"
+              }
               platform={"nextjs"}
+              target={"_blank"}
             >
               {"Request Appointment"}
             </p.PlasmicLink>
