@@ -10,6 +10,7 @@
 // Component: drjN8EGN7rE8
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   hasVariant,
   classNames,
@@ -31,6 +32,7 @@ function PlasmicBaseCard__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultBaseCard__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <p.Stack
       as={"div"}

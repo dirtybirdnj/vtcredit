@@ -9,6 +9,7 @@
 // Plasmic Project: 9W67x2Pynxr9eDxjdLuGCS
 // Component: GnmRy4t8u2
 import * as React from "react";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -29,6 +30,7 @@ function PlasmicLenderAgreementForm__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultLenderAgreementForm__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <div
       data-plasmic-name={"root"}

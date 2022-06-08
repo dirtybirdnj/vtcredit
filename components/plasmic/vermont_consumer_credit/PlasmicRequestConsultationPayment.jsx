@@ -12,6 +12,7 @@ import * as React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -43,6 +44,7 @@ function PlasmicRequestConsultationPayment__RenderFunc(props) {
   );
 
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <React.Fragment>
       <Head>

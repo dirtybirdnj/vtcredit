@@ -11,6 +11,7 @@
 import * as React from "react";
 import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import * as pp from "@plasmicapp/react-web";
 import {
   hasVariant,
@@ -47,6 +48,7 @@ function PlasmicButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultButton__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false

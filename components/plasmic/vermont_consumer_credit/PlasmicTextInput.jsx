@@ -10,6 +10,7 @@
 // Component: b5fDbSitrgRQ
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import * as pp from "@plasmicapp/react-web";
 import {
   hasVariant,
@@ -48,6 +49,7 @@ function PlasmicTextInput__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultTextInput__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: true

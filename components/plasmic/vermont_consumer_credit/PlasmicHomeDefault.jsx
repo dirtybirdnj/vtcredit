@@ -10,6 +10,7 @@
 // Component: oXrrIsz_4Zs
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   hasVariant,
   classNames,
@@ -52,6 +53,7 @@ function PlasmicHomeDefault__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultHomeDefault__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantskcIfFDxm3XN2()
   });

@@ -11,6 +11,7 @@
 import * as React from "react";
 import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   hasVariant,
   classNames,
@@ -35,6 +36,7 @@ function PlasmicHeader__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultHeader__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantskcIfFDxm3XN2()
   });
@@ -187,7 +189,7 @@ function PlasmicHeader__RenderFunc(props) {
 
                       <Button
                         color={"clear"}
-                        link={"/services"}
+                        link={"/get-started"}
                         size={"compact"}
                       >
                         <div
@@ -197,7 +199,7 @@ function PlasmicHeader__RenderFunc(props) {
                             sty.text__kIoM
                           )}
                         >
-                          {"Services"}
+                          {"Get Started"}
                         </div>
                       </Button>
 
@@ -260,7 +262,7 @@ function PlasmicHeader__RenderFunc(props) {
                     >
                       <Button
                         color={"clear"}
-                        link={"/services"}
+                        link={"/get-started"}
                         size={"compact"}
                       >
                         {"Services"}

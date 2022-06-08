@@ -10,6 +10,7 @@
 // Component: r8ItMn1I9Rr2
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -31,6 +32,7 @@ function PlasmicBullet__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultBullet__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <p.Stack
       as={"div"}

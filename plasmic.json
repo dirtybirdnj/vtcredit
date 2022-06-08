@@ -253,19 +253,6 @@
           "componentType": "page"
         },
         {
-          "id": "6sPp355nJZ-s",
-          "name": "Services",
-          "type": "managed",
-          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
-          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicServices.jsx",
-          "importSpec": {
-            "modulePath": "../pages/services.jsx"
-          },
-          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicServices.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "lKpLQt4I320",
           "name": "About",
           "type": "managed",
@@ -446,6 +433,19 @@
           "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicRequestConsultationPayment.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "6sPp355nJZ-s",
+          "name": "GetStarted",
+          "type": "managed",
+          "projectId": "9W67x2Pynxr9eDxjdLuGCS",
+          "renderModuleFilePath": "plasmic/vermont_consumer_credit/PlasmicGetStarted.jsx",
+          "importSpec": {
+            "modulePath": "../pages/get-started.jsx"
+          },
+          "cssFilePath": "plasmic/vermont_consumer_credit/PlasmicGetStarted.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -621,6 +621,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.178",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.178/dist/plasmic.schema.json"
+  "cliVersion": "0.1.180",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.180/dist/plasmic.schema.json"
 }

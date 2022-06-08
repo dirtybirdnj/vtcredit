@@ -10,6 +10,7 @@
 // Component: lKpLQt4I320
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -35,6 +36,7 @@ function PlasmicAbout__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultAbout__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <React.Fragment>
       <style>{`

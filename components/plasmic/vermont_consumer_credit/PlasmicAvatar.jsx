@@ -10,6 +10,7 @@
 // Component: TFmTsDcivu2W
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -30,6 +31,7 @@ function PlasmicAvatar__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultAvatar__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <div
       data-plasmic-name={"root"}

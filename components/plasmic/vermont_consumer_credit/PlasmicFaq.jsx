@@ -10,6 +10,7 @@
 // Component: uvD0OplvXorD
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -30,6 +31,7 @@ function PlasmicFaq__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultFaq__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <BaseCard
       data-plasmic-name={"root"}

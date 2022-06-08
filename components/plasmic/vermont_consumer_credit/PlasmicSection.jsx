@@ -10,6 +10,7 @@
 // Component: TeEenYh07CLQ
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   hasVariant,
   classNames,
@@ -39,6 +40,7 @@ function PlasmicSection__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultSection__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <div
       data-plasmic-name={"root"}

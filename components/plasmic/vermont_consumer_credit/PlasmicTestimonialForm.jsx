@@ -9,6 +9,7 @@
 // Plasmic Project: 9W67x2Pynxr9eDxjdLuGCS
 // Component: 19fS4EkQpA
 import * as React from "react";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -29,6 +30,7 @@ function PlasmicTestimonialForm__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultTestimonialForm__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <div
       data-plasmic-name={"root"}

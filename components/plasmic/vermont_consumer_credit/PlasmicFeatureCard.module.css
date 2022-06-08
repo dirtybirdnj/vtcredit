@@ -2,11 +2,12 @@
   flex-direction: column;
   display: flex;
   width: 352px;
-  height: 195px;
+  height: 100%;
   position: relative;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.12),
     0px 10px 10px -5px rgba(0, 0, 0, 0.02);
   background: var(--token-84P6btZVPbKf);
+  min-height: 0;
   border-radius: 5px;
   padding: 20px;
   border: 1px solid var(--token-L89ExH6ks);
@@ -15,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 0;
   margin-top: calc(0px - 10px);
   height: calc(100% + 10px);
 }
