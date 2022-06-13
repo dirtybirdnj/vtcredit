@@ -268,10 +268,10 @@
 }
 .freeBox___95TUp {
   flex-direction: column;
-  display: flex;
   position: relative;
   width: 150px;
   flex-shrink: 0;
+  display: none;
 }
 .freeBox___95TUp > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -321,10 +321,10 @@
 }
 .freeBox__lAoKd {
   flex-direction: column;
-  display: flex;
   position: relative;
   width: 150px;
   flex-shrink: 0;
+  display: none;
 }
 .freeBox__lAoKd > :global(.__wab_flex-container) {
   flex-direction: column;
