@@ -31,13 +31,11 @@ export const PlasmicHomeCta__VariantProps = new Array();
 
 export const PlasmicHomeCta__ArgProps = new Array();
 
-export const defaultHomeCta__Args = {};
-
 function PlasmicHomeCta__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHomeCta__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantskcIfFDxm3XN2()
   });
@@ -170,12 +168,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicHomeCta__ArgProps,
-      internalVariantPropNames: PlasmicHomeCta__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicHomeCta__ArgProps,
+          internalVariantPropNames: PlasmicHomeCta__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicHomeCta__RenderFunc({
       variants,

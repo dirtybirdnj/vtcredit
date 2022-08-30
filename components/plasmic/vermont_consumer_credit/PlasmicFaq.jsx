@@ -25,13 +25,11 @@ export const PlasmicFaq__VariantProps = new Array();
 
 export const PlasmicFaq__ArgProps = new Array("children", "slot");
 
-export const defaultFaq__Args = {};
-
 function PlasmicFaq__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFaq__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <BaseCard
       data-plasmic-name={"root"}
@@ -72,12 +70,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicFaq__ArgProps,
-      internalVariantPropNames: PlasmicFaq__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicFaq__ArgProps,
+          internalVariantPropNames: PlasmicFaq__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicFaq__RenderFunc({
       variants,

@@ -9,6 +9,7 @@
 // Plasmic Project: 9W67x2Pynxr9eDxjdLuGCS
 // Component: JEcFJJ7eQKF
 import * as React from "react";
+import Head from "next/head";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
@@ -29,15 +30,15 @@ export const PlasmicContact__VariantProps = new Array();
 
 export const PlasmicContact__ArgProps = new Array();
 
-export const defaultContact__Args = {};
-
 function PlasmicContact__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultContact__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <React.Fragment>
+      <Head></Head>
+
       <style>{`
         body {
           margin: 0;
@@ -121,12 +122,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicContact__ArgProps,
-      internalVariantPropNames: PlasmicContact__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicContact__ArgProps,
+          internalVariantPropNames: PlasmicContact__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicContact__RenderFunc({
       variants,

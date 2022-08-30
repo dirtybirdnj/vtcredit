@@ -30,13 +30,11 @@ export const PlasmicHeader__VariantProps = new Array();
 
 export const PlasmicHeader__ArgProps = new Array();
 
-export const defaultHeader__Args = {};
-
 function PlasmicHeader__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHeader__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantskcIfFDxm3XN2()
   });
@@ -322,12 +320,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicHeader__ArgProps,
-      internalVariantPropNames: PlasmicHeader__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicHeader__ArgProps,
+          internalVariantPropNames: PlasmicHeader__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicHeader__RenderFunc({
       variants,

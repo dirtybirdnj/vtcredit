@@ -33,18 +33,11 @@ export const PlasmicRequestConsultationPayment__VariantProps = new Array();
 
 export const PlasmicRequestConsultationPayment__ArgProps = new Array();
 
-export const defaultRequestConsultationPayment__Args = {};
-
 function PlasmicRequestConsultationPayment__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign(
-    {},
-    defaultRequestConsultationPayment__Args,
-    props.args
-  );
-
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>
@@ -53,6 +46,12 @@ function PlasmicRequestConsultationPayment__RenderFunc(props) {
         <meta
           key="og:title"
           property="og:title"
+          content={"Request Consultation"}
+        />
+
+        <meta
+          key="twitter:title"
+          name="twitter:title"
           content={"Request Consultation"}
         />
       </Head>
@@ -256,12 +255,18 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicRequestConsultationPayment__ArgProps,
-      internalVariantPropNames: PlasmicRequestConsultationPayment__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicRequestConsultationPayment__ArgProps,
+          internalVariantPropNames:
+            PlasmicRequestConsultationPayment__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicRequestConsultationPayment__RenderFunc({
       variants,

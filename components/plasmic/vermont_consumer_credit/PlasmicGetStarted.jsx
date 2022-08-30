@@ -34,19 +34,22 @@ export const PlasmicGetStarted__VariantProps = new Array();
 
 export const PlasmicGetStarted__ArgProps = new Array();
 
-export const defaultGetStarted__Args = {};
-
 function PlasmicGetStarted__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultGetStarted__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
         <title key="title">{"Get Started"}</title>
         <meta key="og:title" property="og:title" content={"Get Started"} />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={"Get Started"}
+        />
       </Head>
 
       <style>{`
@@ -86,18 +89,21 @@ function PlasmicGetStarted__RenderFunc(props) {
           >
             <React.Fragment>
               <React.Fragment>{""}</React.Fragment>
-              <h1
-                data-plasmic-name={"h1"}
-                data-plasmic-override={overrides.h1}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h1,
-                  projectcss.__wab_text,
-                  sty.h1
-                )}
-              >
-                {"Let's Get Started"}
-              </h1>
+              {
+                <h1
+                  data-plasmic-name={"h1"}
+                  data-plasmic-override={overrides.h1}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1
+                  )}
+                >
+                  {"Let's Get Started"}
+                </h1>
+              }
+
               <React.Fragment>{""}</React.Fragment>
             </React.Fragment>
           </div>
@@ -168,28 +174,31 @@ function PlasmicGetStarted__RenderFunc(props) {
                 >
                   <React.Fragment>
                     <React.Fragment>{""}</React.Fragment>
-                    <ol
-                      data-plasmic-name={"ol"}
-                      data-plasmic-override={overrides.ol}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.ol,
-                        sty.ol
-                      )}
-                    >
-                      <li
-                        data-plasmic-name={"li"}
-                        data-plasmic-override={overrides.li}
+                    {
+                      <ol
+                        data-plasmic-name={"ol"}
+                        data-plasmic-override={overrides.ol}
                         className={classNames(
                           projectcss.all,
-                          projectcss.li,
-                          projectcss.__wab_text,
-                          sty.li
+                          projectcss.ol,
+                          sty.ol
                         )}
                       >
-                        {"Assessment"}
-                      </li>
-                    </ol>
+                        <li
+                          data-plasmic-name={"li"}
+                          data-plasmic-override={overrides.li}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li
+                          )}
+                        >
+                          {"Assessment"}
+                        </li>
+                      </ol>
+                    }
+
                     <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
@@ -225,7 +234,6 @@ function PlasmicGetStarted__RenderFunc(props) {
                     >
                       {"Affordability."}
                     </span>
-                    <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
               }
@@ -270,7 +278,6 @@ function PlasmicGetStarted__RenderFunc(props) {
                     >
                       {"Pre Qualification Approval"}
                     </span>
-                    <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
               }
@@ -356,12 +363,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicGetStarted__ArgProps,
-      internalVariantPropNames: PlasmicGetStarted__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicGetStarted__ArgProps,
+          internalVariantPropNames: PlasmicGetStarted__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicGetStarted__RenderFunc({
       variants,

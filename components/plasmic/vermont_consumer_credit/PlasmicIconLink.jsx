@@ -25,13 +25,11 @@ export const PlasmicIconLink__VariantProps = new Array();
 
 export const PlasmicIconLink__ArgProps = new Array("icon");
 
-export const defaultIconLink__Args = {};
-
 function PlasmicIconLink__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultIconLink__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -76,12 +74,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicIconLink__ArgProps,
-      internalVariantPropNames: PlasmicIconLink__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicIconLink__ArgProps,
+          internalVariantPropNames: PlasmicIconLink__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicIconLink__RenderFunc({
       variants,

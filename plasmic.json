@@ -603,7 +603,13 @@
         }
       ],
       "indirect": false,
-      "codeComponents": [],
+      "codeComponents": [
+        {
+          "id": "mQidKA1dbo",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        }
+      ],
       "globalContextsFilePath": ""
     }
   ],
@@ -621,6 +627,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.182",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.182/dist/plasmic.schema.json"
+  "cliVersion": "0.1.186",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.186/dist/plasmic.schema.json"
 }

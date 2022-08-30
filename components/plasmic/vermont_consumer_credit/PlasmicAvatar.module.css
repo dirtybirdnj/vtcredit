@@ -17,6 +17,6 @@
 .img__jImNf > picture > img {
   object-fit: cover;
 }
-.img__jImNf > .__wab_img-spacer > img {
+.img__jImNf > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }

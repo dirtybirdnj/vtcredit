@@ -26,13 +26,11 @@ export const PlasmicBaseCard__VariantProps = new Array("long");
 
 export const PlasmicBaseCard__ArgProps = new Array("children", "iconBack");
 
-export const defaultBaseCard__Args = {};
-
 function PlasmicBaseCard__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultBaseCard__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <p.Stack
       as={"div"}
@@ -95,12 +93,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicBaseCard__ArgProps,
-      internalVariantPropNames: PlasmicBaseCard__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicBaseCard__ArgProps,
+          internalVariantPropNames: PlasmicBaseCard__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicBaseCard__RenderFunc({
       variants,

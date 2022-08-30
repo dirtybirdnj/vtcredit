@@ -31,13 +31,11 @@ export const PlasmicSubmitTestimonial__VariantProps = new Array();
 
 export const PlasmicSubmitTestimonial__ArgProps = new Array();
 
-export const defaultSubmitTestimonial__Args = {};
-
 function PlasmicSubmitTestimonial__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultSubmitTestimonial__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>
@@ -46,6 +44,12 @@ function PlasmicSubmitTestimonial__RenderFunc(props) {
         <meta
           key="og:title"
           property="og:title"
+          content={"Submit a Testimonial"}
+        />
+
+        <meta
+          key="twitter:title"
+          name="twitter:title"
           content={"Submit a Testimonial"}
         />
       </Head>
@@ -159,12 +163,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicSubmitTestimonial__ArgProps,
-      internalVariantPropNames: PlasmicSubmitTestimonial__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicSubmitTestimonial__ArgProps,
+          internalVariantPropNames: PlasmicSubmitTestimonial__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicSubmitTestimonial__RenderFunc({
       variants,

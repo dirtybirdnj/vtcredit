@@ -26,13 +26,11 @@ export const PlasmicBullet__VariantProps = new Array();
 
 export const PlasmicBullet__ArgProps = new Array("children");
 
-export const defaultBullet__Args = {};
-
 function PlasmicBullet__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultBullet__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <p.Stack
       as={"div"}
@@ -73,12 +71,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicBullet__ArgProps,
-      internalVariantPropNames: PlasmicBullet__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicBullet__ArgProps,
+          internalVariantPropNames: PlasmicBullet__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicBullet__RenderFunc({
       variants,

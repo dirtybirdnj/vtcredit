@@ -24,13 +24,11 @@ export const PlasmicTestimonialForm__VariantProps = new Array();
 
 export const PlasmicTestimonialForm__ArgProps = new Array();
 
-export const defaultTestimonialForm__Args = {};
-
 function PlasmicTestimonialForm__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultTestimonialForm__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -56,12 +54,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTestimonialForm__ArgProps,
-      internalVariantPropNames: PlasmicTestimonialForm__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicTestimonialForm__ArgProps,
+          internalVariantPropNames: PlasmicTestimonialForm__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicTestimonialForm__RenderFunc({
       variants,

@@ -30,19 +30,18 @@ export const PlasmicSales2__VariantProps = new Array();
 
 export const PlasmicSales2__ArgProps = new Array();
 
-export const defaultSales2__Args = {};
-
 function PlasmicSales2__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultSales2__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
         <title key="title">{"Sales"}</title>
         <meta key="og:title" property="og:title" content={"Sales"} />
+        <meta key="twitter:title" name="twitter:title" content={"Sales"} />
       </Head>
 
       <style>{`
@@ -157,12 +156,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicSales2__ArgProps,
-      internalVariantPropNames: PlasmicSales2__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicSales2__ArgProps,
+          internalVariantPropNames: PlasmicSales2__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicSales2__RenderFunc({
       variants,

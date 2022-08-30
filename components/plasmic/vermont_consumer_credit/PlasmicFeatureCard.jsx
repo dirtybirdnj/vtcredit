@@ -31,13 +31,11 @@ export const PlasmicFeatureCard__ArgProps = new Array(
   "iconBack"
 );
 
-export const defaultFeatureCard__Args = {};
-
 function PlasmicFeatureCard__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFeatureCard__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <p.Stack
       as={"div"}
@@ -143,12 +141,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicFeatureCard__ArgProps,
-      internalVariantPropNames: PlasmicFeatureCard__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicFeatureCard__ArgProps,
+          internalVariantPropNames: PlasmicFeatureCard__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicFeatureCard__RenderFunc({
       variants,

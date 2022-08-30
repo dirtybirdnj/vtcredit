@@ -9,6 +9,7 @@
 // Plasmic Project: 9W67x2Pynxr9eDxjdLuGCS
 // Component: lKpLQt4I320
 import * as React from "react";
+import Head from "next/head";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
@@ -30,15 +31,15 @@ export const PlasmicAbout__VariantProps = new Array();
 
 export const PlasmicAbout__ArgProps = new Array();
 
-export const defaultAbout__Args = {};
-
 function PlasmicAbout__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultAbout__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <React.Fragment>
+      <Head></Head>
+
       <style>{`
         body {
           margin: 0;
@@ -171,12 +172,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicAbout__ArgProps,
-      internalVariantPropNames: PlasmicAbout__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicAbout__ArgProps,
+          internalVariantPropNames: PlasmicAbout__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicAbout__RenderFunc({
       variants,

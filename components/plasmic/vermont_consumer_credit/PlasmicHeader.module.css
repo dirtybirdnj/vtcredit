@@ -69,7 +69,7 @@
 .img__swJ7 > picture > img {
   object-fit: cover;
 }
-.img__swJ7 > .__wab_img-spacer > img {
+.img__swJ7 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -202,7 +202,7 @@
 .img__cvUFq > picture > img {
   object-fit: cover;
 }
-.img__cvUFq > .__wab_img-spacer > img {
+.img__cvUFq > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 @media (min-width: 0px) and (max-width: 768px) {

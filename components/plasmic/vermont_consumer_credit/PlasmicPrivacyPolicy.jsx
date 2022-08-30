@@ -31,19 +31,22 @@ export const PlasmicPrivacyPolicy__VariantProps = new Array();
 
 export const PlasmicPrivacyPolicy__ArgProps = new Array();
 
-export const defaultPrivacyPolicy__Args = {};
-
 function PlasmicPrivacyPolicy__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultPrivacyPolicy__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
         <title key="title">{"Privacy Policy"}</title>
         <meta key="og:title" property="og:title" content={"Privacy Policy"} />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={"Privacy Policy"}
+        />
       </Head>
 
       <style>{`
@@ -179,12 +182,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicPrivacyPolicy__ArgProps,
-      internalVariantPropNames: PlasmicPrivacyPolicy__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicPrivacyPolicy__ArgProps,
+          internalVariantPropNames: PlasmicPrivacyPolicy__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicPrivacyPolicy__RenderFunc({
       variants,
